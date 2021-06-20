@@ -1,0 +1,3 @@
+TFT control with CS tied to GND:
+
+https://github.com/Bodmer/TFT_eSPI/issues/163
