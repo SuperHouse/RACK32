@@ -5,6 +5,8 @@ Copyright 2021 SuperHouse Automation Pty Ltd  www.superhouse.tv
 
 A general purpose control board for rack mount projects.
 
+![Universal Rack Controller - ESP32 Edition](Images/URC-ESP32-v1_0-render.jpg)
+
 DIY rack-mount projects often require an Ethernet connection, a
 status display, power regulation, and other features that are not
 specific to the project.
