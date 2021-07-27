@@ -1,3 +1,26 @@
 TFT control with CS tied to GND:
 
 https://github.com/Bodmer/TFT_eSPI/issues/163
+
+https://www.instructables.com/Adding-CS-Pin-to-13-LCD/
+
+These Adafruit modules solve the CS pin problem and have an onboard micro SD
+card slot, but they're very expensive. We could make different carrier
+boards for this or the dodgy AliExpress ones that don't have CS. Maybe a
+tri-state buffer on the carrier board to avoid having to rework the cheap
+displays?
+
+https://learn.adafruit.com/adafruit-1-3-and-1-54-240-x-240-wide-angle-tft-lcd-displays?view=all
+
+Pins required:
+Pin  ESP32          LCD
+1    GND            GND
+2    3.3V           VCC (should be compatible with either 3.3V or 5V)
+3    IO18_SCLK      TFT_SCLK
+4    IO23_COPI      TFT_COPI
+5    IO4_TFT_RST    TFT_RST
+6    IO2_TFT_DC     TFT_DC
+7    IO ?           TFT_BLK (backlight control)
+8    IO ?           TFT_CS (doesn't exist on cheap module: control buffer?)
+
+  IO22   TFT_CIPO (not used on cheap module: required for Adafruit with micro SD card)
