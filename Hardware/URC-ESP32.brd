@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="59" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="1" visible="yes" active="yes"/>
@@ -188,7 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwMzE1MTgyMjY5OTA2" f3durn="urn:adsk.wipprod:dm.lineage:8FuzMIHgRhezW5m3hIVqKw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="42844e33-5a07-b25f-797f-d099163c2932" latestrevisionid="a953a9c4-6b97-4213-80b4-fe1f5b5b1408" lastsyncedrevisionid="a953a9c4-6b97-4213-80b4-fe1f5b5b1408" lastboardhashguid="fc9f892b-9f84-d4c2-2bef-10e0533813b8" lastpushedtime="2021-07-27T08:21:42Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwMzE1MTgyMjY5OTA2" f3durn="urn:adsk.wipprod:dm.lineage:8FuzMIHgRhezW5m3hIVqKw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="42844e33-5a07-b25f-797f-d099163c2932" latestrevisionid="8f83b5f3-d648-4c5a-b363-8ae5f18c725b" lastsyncedrevisionid="8f83b5f3-d648-4c5a-b363-8ae5f18c725b" lastboardhashguid="423c7c7e-7bea-f361-26a1-c732e8495f89" lastpushedtime="2021-07-28T06:11:23Z" linktopcb3d="true"/>
 <plain>
 <wire x1="120" y1="51" x2="117" y2="54" width="0" layer="20" curve="90"/>
 <wire x1="117" y1="54" x2="3" y2="54" width="0" layer="20"/>
@@ -338,8 +338,9 @@ Controller</text>
 <wire x1="2" y1="36" x2="2" y2="34" width="0.4064" layer="21"/>
 <wire x1="2" y1="46" x2="2" y2="48" width="0.4064" layer="21"/>
 <wire x1="1" y1="35" x2="3" y2="35" width="0.4064" layer="21"/>
-<text x="28.5" y="35.5" size="1.27" layer="21" font="vector" ratio="12" distance="30" rot="R90">Look! A
-squirrel!</text>
+<text x="29.3" y="35.5" size="1.016" layer="21" font="vector" ratio="12" distance="20" rot="R90">A squirrel is
+  eating the
+  vreg!</text>
 <text x="108.25" y="17.5" size="1.6764" layer="21" font="vector" ratio="17" align="bottom-center">LED</text>
 <wire x1="106" y1="19.5" x2="107.5" y2="19.5" width="0.254" layer="21"/>
 <wire x1="106.75" y1="20.25" x2="106.75" y2="18.75" width="0.254" layer="21"/>
@@ -388,6 +389,22 @@ squirrel!</text>
 <wire x1="29.05" y1="47.45" x2="29" y2="46.9" width="0.3048" layer="21" curve="36.869898"/>
 <circle x="28" y="47.5" radius="0.05" width="0.3048" layer="21"/>
 <wire x1="26.5" y1="48.5" x2="26.2" y2="48.5" width="0.3048" layer="21"/>
+<text x="95.23" y="50.7" size="1.27" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">SCL</text>
+<text x="92.69" y="50.7" size="1.27" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">SDA</text>
+<text x="90.15" y="50.7" size="1.27" layer="21" font="vector" ratio="18" rot="SR90" align="center-right">GND</text>
+<text x="87.61" y="50.7" size="1.27" layer="21" font="vector" ratio="18" rot="SR90" align="center-right">3.3V</text>
+<text x="97.77" y="50.7" size="1.016" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">SDA2</text>
+<text x="100.31" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO32_SCL2</text>
+<text x="102.7" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO17_TX2</text>
+<text x="105.39" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO16_RX2</text>
+<text x="90.15" y="50.9" size="1.27" layer="22" font="vector" ratio="18" rot="SMR90" align="center-right">GND</text>
+<text x="87.61" y="50.9" size="1.27" layer="22" font="vector" ratio="18" rot="SMR90" align="center-right">3.3V</text>
+<text x="92.69" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO21_SDA</text>
+<text x="95.23" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO22_SCL</text>
+<text x="97.77" y="50.9" size="1.27" layer="22" font="vector" ratio="18" distance="10" rot="SMR90" align="center-right">IO33_SDA2</text>
+<text x="100.31" y="50.7" size="1.016" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">SCL2</text>
+<text x="102.85" y="50.7" size="1.27" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">TX2</text>
+<text x="105.39" y="50.7" size="1.27" layer="21" font="vector" ratio="18" distance="10" rot="SR90" align="center-right">RX2</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -414,244 +431,6 @@ squirrel!</text>
 <description>INDUCTOR</description>
 <packageinstances>
 <packageinstance name="L2012C"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
-<library name="freetronics-master-v1">
-<packages>
-<package name="SOT23">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-0.889" y="2.032" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-</packages>
-</library>
-<library name="SuperHouse-DiscreteSemi" urn="urn:adsk.eagle:library:11768461">
-<packages>
-<package name="R0603" urn="urn:adsk.eagle:footprint:11768537/1" library_version="23">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
-<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
-<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
-<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
-</package>
-<package name="C0603" urn="urn:adsk.eagle:footprint:7065888/2" library_version="23">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
-<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
-<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
-<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
-</package>
-<package name="SMA-DIODE" urn="urn:adsk.eagle:footprint:7065795/1" library_version="23">
-<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
-Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
-<wire x1="-2.3" y1="1" x2="-2.3" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="1.45" x2="2.3" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="1.45" x2="2.3" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="-1" x2="2.3" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="-1.45" x2="-2.3" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-1.45" x2="-2.3" y2="-1" width="0.2032" layer="21"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
-<smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
-<smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
-<text x="-2.286" y="1.651" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.254" y="1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="TVS0603" urn="urn:adsk.eagle:footprint:11801342/1" library_version="23">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
-<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
-<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
-<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
-<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
-<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
-<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
-</package>
-<package name="CAY16" urn="urn:adsk.eagle:footprint:11872189/1" library_version="25">
-<description>&lt;b&gt;BOURNS&lt;/b&gt; Chip Resistor Array&lt;p&gt;
-Source: RS Component / BUORNS</description>
-<wire x1="-1.55" y1="0.75" x2="-1" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-0.6" y1="0.75" x2="-0.2" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="0.2" y1="0.75" x2="0.6" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-1" y1="0.75" x2="-0.6" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="-0.2" y1="0.75" x2="0.2" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="0.6" y1="0.75" x2="1" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="1.55" y1="-0.75" x2="1" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="0.6" y1="-0.75" x2="0.2" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.2" y1="-0.75" x2="-0.6" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="1" y1="-0.75" x2="0.6" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="0.2" y1="-0.75" x2="-0.2" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="-0.6" y1="-0.75" x2="-1" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<smd name="1" x="-1.2" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="2" x="-0.4" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="3" x="0.4" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="4" x="1.2" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="5" x="1.2" y="0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="6" x="0.4" y="0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="7" x="-0.4" y="0.675" dx="0.5" dy="0.65" layer="1"/>
-<smd name="8" x="-1.2" y="0.675" dx="0.5" dy="0.65" layer="1"/>
-<text x="-1.905" y="-2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.905" y="1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="EIA3216" urn="urn:adsk.eagle:footprint:7065874/1" library_version="26">
-<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="51"/>
-<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="51"/>
-<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="C0805" urn="urn:adsk.eagle:footprint:7065891/3" library_version="23">
-<description>Ceramic capacitor, 0805 size</description>
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SOT-363" urn="urn:adsk.eagle:footprint:11799615/1" library_version="8">
-<description>&lt;h3&gt;SC-88/SC70-6/SOT-363 6-pin Package&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<circle x="-1.3335" y="-1.016" radius="0.254" width="0" layer="21"/>
-<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
-<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
-<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
-<wire x1="-1.1176" y1="0.7493" x2="-1.1176" y2="-0.6223" width="0.2032" layer="21"/>
-<wire x1="1.1176" y1="-0.7493" x2="1.1176" y2="0.7493" width="0.2032" layer="21"/>
-<wire x1="-0.9779" y1="0.7493" x2="-1.1176" y2="0.7493" width="0.2032" layer="21"/>
-<wire x1="1.1176" y1="0.7493" x2="0.9779" y2="0.7493" width="0.2032" layer="21"/>
-<wire x1="-1.1176" y1="-0.6223" x2="-0.9779" y2="-0.7493" width="0.2032" layer="21"/>
-<wire x1="0.9779" y1="-0.7493" x2="1.1176" y2="-0.7493" width="0.2032" layer="21"/>
-<rectangle x1="-0.1016" y1="0.6858" x2="0.1016" y2="1.0414" layer="51"/>
-<rectangle x1="-0.1016" y1="-1.0414" x2="0.1016" y2="-0.6858" layer="51"/>
-<rectangle x1="0.5484" y1="0.6858" x2="0.7516" y2="1.0414" layer="51"/>
-<rectangle x1="-0.7516" y1="0.6858" x2="-0.5484" y2="1.0414" layer="51"/>
-<rectangle x1="-0.7516" y1="-1.0414" x2="-0.5484" y2="-0.6858" layer="51"/>
-<rectangle x1="0.5484" y1="-1.0414" x2="0.7516" y2="-0.6858" layer="51"/>
-<smd name="4" x="0.65" y="0.95" dx="0.42" dy="0.6" layer="1"/>
-<smd name="2" x="0" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
-<smd name="1" x="-0.65" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
-<smd name="3" x="0.65" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
-<smd name="5" x="0" y="0.95" dx="0.42" dy="0.6" layer="1"/>
-<smd name="6" x="-0.65" y="0.95" dx="0.42" dy="0.6" layer="1"/>
-<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="16" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="RESC1608X45" urn="urn:adsk.eagle:package:11768543/2" type="model" library_version="23">
-<description>Chip, 1.60 X 0.80 X 0.45 mm body
-&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC1608X45" urn="urn:adsk.eagle:package:7066315/6" type="model" library_version="23">
-<description>Chip, 1.60 X 0.80 X 0.45 mm body
-&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="C0603"/>
-</packageinstances>
-</package3d>
-<package3d name="DIOM4327X244" urn="urn:adsk.eagle:package:7066222/3" type="model" library_version="23">
-<description>Molded Body, 4.30 X 2.70 X 2.44 mm body
-&lt;p&gt;Molded Body package with body size 4.30 X 2.70 X 2.44 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SMA-DIODE"/>
-</packageinstances>
-</package3d>
-<package3d name="DIOC1608X40" urn="urn:adsk.eagle:package:11801346/2" type="model" library_version="23">
-<description>Chip, 1.60 X 0.80 X 0.40 mm body
-&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.40 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TVS0603"/>
-</packageinstances>
-</package3d>
-<package3d name="RESCAXE80P290X140X70-8" urn="urn:adsk.eagle:package:11872201/2" type="model" library_version="25">
-<description>8-Chiparray 2-Side Convex, 0.80 mm pitch, 2.90 X 1.40 X 0.70 mm body
-&lt;p&gt;8-pin Chiparray 2-Side Convex package with 0.80 mm pitch with body size 2.90 X 1.40 X 0.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAY16"/>
-</packageinstances>
-</package3d>
-<package3d name="EIA3216" urn="urn:adsk.eagle:package:7066301/2" type="model" library_version="26">
-<packageinstances>
-<packageinstance name="EIA3216"/>
-</packageinstances>
-</package3d>
-<package3d name="CAPC2012X100" urn="urn:adsk.eagle:package:7066318/4" type="model" library_version="23">
-<description>Chip, 2.00 X 1.25 X 1.00 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.25 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="C0805"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT65P210X100-6" urn="urn:adsk.eagle:package:11799616/2" type="model" library_version="8">
-<description>6-SOT23, 0.65 mm pitch, 2.10 mm span, 2.15 X 1.30 X 1.00 mm body
-&lt;p&gt;6-pin SOT23 package with 0.65 mm pitch, 2.10 mm span with body size 2.15 X 1.30 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOT-363"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -908,6 +687,77 @@ Source: RS Component / BUORNS</description>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 </package>
+<package name="1X08" urn="urn:adsk.eagle:footprint:11866878/3" library_version="239" library_locally_modified="yes">
+<description>M08</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-9.525" y1="1.27" x2="-8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-8.255" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-6.985" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="-1.27" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="0.635" x2="-10.16" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-9.525" y1="1.27" x2="-10.16" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-0.635" x2="-9.525" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-8.255" y1="-1.27" x2="-9.525" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="10.16" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-0.635" x2="9.525" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="0.635" x2="10.16" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="-1.27" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-8.89" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="7" x="6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="8" x="8.89" y="0" drill="1.016" rot="R90"/>
+<text x="-10.2362" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-10.16" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="HY931147C" urn="urn:adsk.eagle:package:11872177/2" type="model" library_version="34">
@@ -954,6 +804,12 @@ Source: RS Component / BUORNS</description>
 <description>M02</description>
 <packageinstances>
 <packageinstance name="1X02-P-JUMP-Y"/>
+</packageinstances>
+</package3d>
+<package3d name="1X08" urn="urn:adsk.eagle:package:11866882/3" type="box" library_version="239" library_locally_modified="yes">
+<description>M08</description>
+<packageinstances>
+<packageinstance name="1X08"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1312,7 +1168,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 <text x="-1.143" y="-0.508" size="0.8128" layer="21" ratio="15">.</text>
 </package>
-<package name="TO220" urn="urn:adsk.eagle:footprint:24071312/2" library_version="25">
+<package name="TO220" urn="urn:adsk.eagle:footprint:24071312/3" library_version="28">
 <description>TO200 flat</description>
 <pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
@@ -1330,7 +1186,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <rectangle x1="-4.5" y1="12" x2="-0.5" y2="14" layer="31"/>
 <rectangle x1="2.5" y1="14.5" x2="4" y2="18.5" layer="31"/>
 <rectangle x1="-4" y1="14.5" x2="-2.5" y2="18.5" layer="31"/>
-<smd name="HEATSINK" x="0" y="14" dx="9.6" dy="10" layer="1" stop="no" cream="no"/>
+<smd name="HEATSINK" x="0" y="14" dx="9.6" dy="10" layer="1" cream="no"/>
 </package>
 <package name="DP1435" urn="urn:adsk.eagle:footprint:30087353/1" library_version="26">
 <description>SDAPO DP1435 PoE module in SIL format</description>
@@ -1380,7 +1236,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <packageinstance name="SOT23-5"/>
 </packageinstances>
 </package3d>
-<package3d name="TO220" urn="urn:adsk.eagle:package:24071313/3" type="model" library_version="25">
+<package3d name="TO220" urn="urn:adsk.eagle:package:24071313/4" type="model" library_version="28">
 <description>TO200 flat</description>
 <packageinstances>
 <packageinstance name="TO220"/>
@@ -1482,6 +1338,46 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="C0603" urn="urn:adsk.eagle:footprint:7065888/2" library_version="2">
+<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
+<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
+<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
+</package>
+<package name="EIA3216" urn="urn:adsk.eagle:footprint:7065874/1" library_version="2">
+<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="51"/>
+<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="51"/>
+<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="51"/>
+<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
+<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPAE1020X1050" urn="urn:adsk.eagle:package:7066306/3" type="model" library_version="2">
@@ -1495,6 +1391,18 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 &lt;p&gt;Chip package with body size 2.00 X 1.25 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="RESC1608X45" urn="urn:adsk.eagle:package:7066315/6" type="model" library_version="2">
+<description>Chip, 1.60 X 0.80 X 0.45 mm body
+&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="C0603"/>
+</packageinstances>
+</package3d>
+<package3d name="EIA3216" urn="urn:adsk.eagle:package:7066301/2" type="model" library_version="2">
+<packageinstances>
+<packageinstance name="EIA3216"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1552,11 +1460,161 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
 </package>
+<package name="CAY16" urn="urn:adsk.eagle:footprint:28961112/1" library_version="1">
+<description>&lt;b&gt;BOURNS&lt;/b&gt; Chip Resistor Array&lt;p&gt;
+Source: RS Component / BUORNS</description>
+<wire x1="-1.55" y1="0.75" x2="-1" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="-0.6" y1="0.75" x2="-0.2" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="0.2" y1="0.75" x2="0.6" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="1" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="-1" y1="0.75" x2="-0.6" y2="0.75" width="0.1016" layer="51" curve="180"/>
+<wire x1="-0.2" y1="0.75" x2="0.2" y2="0.75" width="0.1016" layer="51" curve="180"/>
+<wire x1="0.6" y1="0.75" x2="1" y2="0.75" width="0.1016" layer="51" curve="180"/>
+<wire x1="1.55" y1="-0.75" x2="1" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="0.6" y1="-0.75" x2="0.2" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="-0.2" y1="-0.75" x2="-0.6" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="-1" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
+<wire x1="1" y1="-0.75" x2="0.6" y2="-0.75" width="0.1016" layer="51" curve="180"/>
+<wire x1="0.2" y1="-0.75" x2="-0.2" y2="-0.75" width="0.1016" layer="51" curve="180"/>
+<wire x1="-0.6" y1="-0.75" x2="-1" y2="-0.75" width="0.1016" layer="51" curve="180"/>
+<smd name="1" x="-1.2" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="2" x="-0.4" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="3" x="0.4" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="4" x="1.2" y="-0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="5" x="1.2" y="0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="6" x="0.4" y="0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="7" x="-0.4" y="0.675" dx="0.5" dy="0.65" layer="1"/>
+<smd name="8" x="-1.2" y="0.675" dx="0.5" dy="0.65" layer="1"/>
+<text x="-1.905" y="-2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESC1608X45" urn="urn:adsk.eagle:package:28961141/1" type="model" library_version="1">
 <packageinstances>
 <packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+<package3d name="RESCAXE80P290X140X70-8" urn="urn:adsk.eagle:package:28961138/1" type="model" library_version="1">
+<description>&lt;b&gt;BOURNS&lt;/b&gt; Chip Resistor Array&lt;p&gt;
+Source: RS Component / BUORNS</description>
+<packageinstances>
+<packageinstance name="CAY16"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="SuperHouse-Diodes" urn="urn:adsk.eagle:library:28961057">
+<packages>
+<package name="SMA-DIODE" urn="urn:adsk.eagle:footprint:28961062/1" library_version="1">
+<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
+Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
+<wire x1="-2.3" y1="1" x2="-2.3" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.45" x2="2.3" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="1.45" x2="2.3" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="-1" x2="2.3" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="-1.45" x2="-2.3" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-1.45" x2="-2.3" y2="-1" width="0.2032" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
+<smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
+<smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
+<text x="-2.286" y="1.651" size="0.4064" layer="25">&gt;NAME</text>
+<text x="0.254" y="1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="TVS0603" urn="urn:adsk.eagle:footprint:28961058/1" library_version="1">
+<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
+<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
+<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIOM4327X244" urn="urn:adsk.eagle:package:28961089/1" type="model" library_version="1">
+<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
+Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
+<packageinstances>
+<packageinstance name="SMA-DIODE"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOC1608X40" urn="urn:adsk.eagle:package:28961086/1" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="TVS0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="SuperHouse-Transistors" urn="urn:adsk.eagle:library:28961147">
+<packages>
+<package name="SOT-363" urn="urn:adsk.eagle:footprint:28961158/1" library_version="1">
+<description>&lt;h3&gt;SC-88/SC70-6/SOT-363 6-pin Package&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-1.3335" y="-1.016" radius="0.254" width="0" layer="21"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.1176" y1="0.7493" x2="-1.1176" y2="-0.6223" width="0.2032" layer="21"/>
+<wire x1="1.1176" y1="-0.7493" x2="1.1176" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="-0.9779" y1="0.7493" x2="-1.1176" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="1.1176" y1="0.7493" x2="0.9779" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="-1.1176" y1="-0.6223" x2="-0.9779" y2="-0.7493" width="0.2032" layer="21"/>
+<wire x1="0.9779" y1="-0.7493" x2="1.1176" y2="-0.7493" width="0.2032" layer="21"/>
+<rectangle x1="-0.1016" y1="0.6858" x2="0.1016" y2="1.0414" layer="51"/>
+<rectangle x1="-0.1016" y1="-1.0414" x2="0.1016" y2="-0.6858" layer="51"/>
+<rectangle x1="0.5484" y1="0.6858" x2="0.7516" y2="1.0414" layer="51"/>
+<rectangle x1="-0.7516" y1="0.6858" x2="-0.5484" y2="1.0414" layer="51"/>
+<rectangle x1="-0.7516" y1="-1.0414" x2="-0.5484" y2="-0.6858" layer="51"/>
+<rectangle x1="0.5484" y1="-1.0414" x2="0.7516" y2="-0.6858" layer="51"/>
+<smd name="4" x="0.65" y="0.95" dx="0.42" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
+<smd name="1" x="-0.65" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
+<smd name="3" x="0.65" y="-0.95" dx="0.42" dy="0.6" layer="1" rot="R180"/>
+<smd name="5" x="0" y="0.95" dx="0.42" dy="0.6" layer="1"/>
+<smd name="6" x="-0.65" y="0.95" dx="0.42" dy="0.6" layer="1"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="16" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOT23-3" urn="urn:adsk.eagle:footprint:28961157/1" library_version="1">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOT65P210X100-6" urn="urn:adsk.eagle:package:28961172/1" type="model" library_version="1">
+<description>&lt;h3&gt;SC-88/SC70-6/SOT-363 6-pin Package&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT-363"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-3" urn="urn:adsk.eagle:package:28961169/1" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="SOT23-3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1752,19 +1810,19 @@ These rules have been set to have limits that are safe for most board fabs, whil
 </pass>
 </autorouter>
 <elements>
-<element name="C5" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="100" y="30.5" smashed="yes">
+<element name="C5" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="100" y="30.5" smashed="yes">
 <attribute name="NAME" x="101.016" y="29.738" size="0.635" layer="25" font="vector" ratio="17" rot="R180"/>
 <attribute name="VALUE" x="98.984" y="29.5348" size="0.635" layer="27" font="vector" ratio="17"/>
 </element>
-<element name="C4" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="95" y="34.5" smashed="yes" rot="R270">
+<element name="C4" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="95" y="34.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="94.492" y="33.611" size="0.635" layer="25" font="vector" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="94.0348" y="35.516" size="0.635" layer="27" font="vector" ratio="17" rot="R270"/>
 </element>
-<element name="C10" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="87" y="51.5" smashed="yes">
-<attribute name="NAME" x="87.889" y="52.643" size="0.635" layer="25" font="vector" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="85.984" y="50.5348" size="0.635" layer="27" font="vector" ratio="17"/>
+<element name="C10" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="81" y="51.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="80.111" y="50.357" size="0.635" layer="25" font="vector" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="82.016" y="52.4652" size="0.635" layer="27" font="vector" ratio="17" rot="R180"/>
 </element>
-<element name="R31" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1M" x="79.5" y="33.5" smashed="yes" rot="R180">
+<element name="R31" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1M" x="79.5" y="33.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="80.135" y="32.992" size="0.635" layer="25" font="vector" ratio="17" rot="R180"/>
 <attribute name="VALUE" x="80.516" y="34.4652" size="0.635" layer="27" font="vector" ratio="17" rot="R180"/>
 </element>
@@ -1787,21 +1845,21 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <element name="FID1" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" package="FIDUCIAL-1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2" value="FIDUCIAL1X2.5" x="3" y="41" smashed="yes" rot="R180"/>
 <element name="FID2" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" package="FIDUCIAL-1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2" value="FIDUCIAL1X2.5" x="50" y="14" smashed="yes" rot="R180"/>
 <element name="U1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="HY931147C" package3d_urn="urn:adsk.eagle:package:11872177/2" value="HY931147C-RJ45" x="113" y="37" smashed="yes" rot="R180"/>
-<element name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="L2012C" package3d_urn="urn:adsk.eagle:package:23475/2" value="1uH 250mA 0805" x="87" y="49.5" smashed="yes">
-<attribute name="NAME" x="88.27" y="50.008" size="0.635" layer="25" ratio="17" rot="R270"/>
-<attribute name="POPULARITY" value="6" x="87" y="49.5" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="L" x="87" y="49.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="85.095" y="46.96" size="0.635" layer="27" ratio="17"/>
+<element name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="L2012C" package3d_urn="urn:adsk.eagle:package:23475/2" value="1uH 250mA 0805" x="92" y="46.5" smashed="yes">
+<attribute name="NAME" x="93.27" y="47.008" size="0.635" layer="25" ratio="17" rot="R270"/>
+<attribute name="POPULARITY" value="6" x="92" y="46.5" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="L" x="92" y="46.5" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="90.095" y="43.96" size="0.635" layer="27" ratio="17"/>
 </element>
-<element name="C17" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="EIA3216" package3d_urn="urn:adsk.eagle:package:7066301/2" value="10uF 6.3V A TANT" x="92" y="49.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="91.508" y="48.738" size="0.635" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="91.592" y="48.168" size="0.635" layer="27" ratio="17" rot="R180"/>
+<element name="C17" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="EIA3216" package3d_urn="urn:adsk.eagle:package:7066301/2" value="10uF 6.3V A TANT" x="97" y="44" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.238" y="44.492" size="0.635" layer="25" ratio="17"/>
+<attribute name="VALUE" x="95.668" y="44.408" size="0.635" layer="27" ratio="17" rot="R90"/>
 </element>
-<element name="D1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="SMA-DIODE" package3d_urn="urn:adsk.eagle:package:7066222/3" value="SS56" x="11" y="41" smashed="yes" rot="R270">
+<element name="D1" library="SuperHouse-Diodes" library_urn="urn:adsk.eagle:library:28961057" package="SMA-DIODE" package3d_urn="urn:adsk.eagle:package:28961089/1" value="SS56" x="11" y="41" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.508" y="41" size="0.635" layer="25" ratio="17" rot="R180"/>
 <attribute name="VALUE" x="7.571" y="42.905" size="0.635" layer="27" ratio="17" rot="R270"/>
 </element>
-<element name="C14" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="32" y="39" smashed="yes">
+<element name="C14" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="32" y="39" smashed="yes">
 <attribute name="NAME" x="33.016" y="39.508" size="0.635" layer="25" font="vector" ratio="17" rot="R270"/>
 <attribute name="VALUE" x="30.984" y="37.857" size="0.635" layer="27" font="vector" ratio="17"/>
 </element>
@@ -1813,24 +1871,24 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="93" y="20.476" size="0.635" layer="25" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="91.095" y="18.063" size="0.635" layer="27" ratio="17"/>
 </element>
-<element name="C13" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="93" y="26" smashed="yes" rot="R180">
+<element name="C13" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="93" y="26" smashed="yes" rot="R180">
 <attribute name="NAME" x="94.016" y="25.492" size="0.635" layer="25" font="vector" ratio="17" rot="R180"/>
 <attribute name="VALUE" x="94.016" y="27.143" size="0.635" layer="27" font="vector" ratio="17" rot="R180"/>
 </element>
-<element name="Q1" library="freetronics-master-v1" package="SOT23" value="FDN340P" x="100" y="22" smashed="yes" rot="R270">
+<element name="Q1" library="SuperHouse-Transistors" library_urn="urn:adsk.eagle:library:28961147" package="SOT23-3" package3d_urn="urn:adsk.eagle:package:28961169/1" value="FDN340P" x="100" y="22" smashed="yes" rot="R270">
 <attribute name="NAME" x="99.619" y="22.508" size="0.635" layer="25" ratio="17"/>
 <attribute name="VALUE" x="99.8095" y="23.016" size="0.635" layer="27" ratio="17" rot="R270"/>
 </element>
-<element name="C7" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="54" y="13" smashed="yes" rot="R90">
+<element name="C7" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="54" y="13" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.762" y="11.984" size="0.635" layer="25" font="vector" ratio="17" rot="R180"/>
 <attribute name="VALUE" x="55.143" y="11.984" size="0.635" layer="27" font="vector" ratio="17" rot="R90"/>
 </element>
 <element name="FID3" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" package="FIDUCIAL-1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2" value="FIDUCIAL1X2.5" x="115.333" y="37.124" smashed="yes" rot="R180"/>
-<element name="R16" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="4K7" x="85.648" y="16.5" smashed="yes" rot="R270">
+<element name="R16" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="4K7" x="85.648" y="16.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="85.013" y="17.516" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="84.6828" y="17.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R17" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="4K7" x="85.568" y="22.458" smashed="yes" rot="R270">
+<element name="R17" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="4K7" x="85.568" y="22.458" smashed="yes" rot="R270">
 <attribute name="NAME" x="84.679" y="23.474" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="84.6028" y="23.474" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -1842,63 +1900,63 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="81.105" y="32.04" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" x="77.46" y="32.04" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="18pF" x="77" y="30.5" smashed="yes" rot="R270">
+<element name="C1" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="18pF" x="77" y="30.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.508" y="31.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="76.0348" y="31.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="18pF" x="79.5" y="27.5" smashed="yes" rot="R180">
+<element name="C2" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="18pF" x="79.5" y="27.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="80.389" y="26.992" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="80.516" y="28.4652" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C3" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="85.5" y="45" smashed="yes" rot="R90">
+<element name="C3" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="10nF" x="85.5" y="45" smashed="yes" rot="R90">
 <attribute name="NAME" x="84.992" y="44.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="86.4652" y="43.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C16" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="4.7uF" x="88.5" y="45" smashed="yes" rot="R90">
+<element name="C16" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="4.7uF" x="88.5" y="45" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.992" y="44.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="89.4652" y="43.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R26" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="12.4K 1%" x="95" y="40.5" smashed="yes" rot="R90">
+<element name="R26" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="12.4K 1%" x="95" y="40.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="94.492" y="39.611" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="95.9652" y="39.484" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R23" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K" x="84" y="45" smashed="yes" rot="R90">
+<element name="R23" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K" x="84" y="45" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.492" y="44.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="84.9652" y="43.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R22" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K" x="44.5254" y="38.23" smashed="yes" rot="R270">
+<element name="R22" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K" x="44.5254" y="38.23" smashed="yes" rot="R270">
 <attribute name="NAME" x="45.0334" y="39.119" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="43.5602" y="39.246" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C8" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="91.5" y="45" smashed="yes">
-<attribute name="NAME" x="90.611" y="45.508" size="0.4064" layer="25" font="vector"/>
-<attribute name="VALUE" x="90.484" y="44.0348" size="0.4064" layer="27" font="vector"/>
+<element name="C8" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="93.5" y="44" smashed="yes" rot="R270">
+<attribute name="NAME" x="94.008" y="44.889" size="0.4064" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="92.5348" y="45.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C11" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="95" y="37.5" smashed="yes" rot="R90">
+<element name="C11" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="95" y="37.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="94.492" y="36.611" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="95.9652" y="36.484" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C12" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="87" y="45" smashed="yes" rot="R90">
+<element name="C12" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="87" y="45" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.492" y="44.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="87.9652" y="43.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C6" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="22nF" x="100" y="35" smashed="yes" rot="R180">
+<element name="C6" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="22nF" x="100" y="35" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.889" y="34.492" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="101.016" y="35.9652" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10R" x="100" y="36.5" smashed="yes">
+<element name="R1" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10R" x="100" y="36.5" smashed="yes">
 <attribute name="NAME" x="99.111" y="37.008" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="98.984" y="35.5348" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="D2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="SMA-DIODE" package3d_urn="urn:adsk.eagle:package:7066222/3" value="SS56" x="19" y="27" smashed="yes" rot="R180">
+<element name="D2" library="SuperHouse-Diodes" library_urn="urn:adsk.eagle:library:28961057" package="SMA-DIODE" package3d_urn="urn:adsk.eagle:package:28961089/1" value="SS56" x="19" y="27" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.286" y="25.349" size="0.4064" layer="25" rot="R180"/>
 <attribute name="VALUE" x="18.746" y="25.349" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="RN1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="CAY16" package3d_urn="urn:adsk.eagle:package:11872201/2" value="10K" x="90" y="29.5" smashed="yes" rot="R180">
+<element name="RN1" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="CAY16" package3d_urn="urn:adsk.eagle:package:28961138/1" value="10K" x="90" y="29.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="91.905" y="32.04" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="91.905" y="28.23" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="RN2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="CAY16" package3d_urn="urn:adsk.eagle:package:11872201/2" value="10K" x="86" y="29.5" smashed="yes" rot="R180">
+<element name="RN2" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="CAY16" package3d_urn="urn:adsk.eagle:package:28961138/1" value="10K" x="86" y="29.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="87.905" y="32.04" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="87.905" y="28.23" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -1906,7 +1964,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="39.4412" y="48.611" size="0.4064" layer="25" rot="R90"/>
 <attribute name="VALUE" x="40.9652" y="48.484" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="R15" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="4K7" x="40" y="45.5" smashed="yes" rot="R270">
+<element name="R15" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="4K7" x="40" y="45.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.508" y="46.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="39.0348" y="46.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -1914,15 +1972,15 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="31.238" y="41.8255" size="0.4064" layer="25"/>
 <attribute name="VALUE" x="30.984" y="39.603" size="0.4064" layer="27"/>
 </element>
-<element name="Z1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="TVS0603" package3d_urn="urn:adsk.eagle:package:11801346/2" value="PGB1010603" x="108.5" y="9.5" smashed="yes" rot="R90">
+<element name="Z1" library="SuperHouse-Diodes" library_urn="urn:adsk.eagle:library:28961057" package="TVS0603" package3d_urn="urn:adsk.eagle:package:28961086/1" value="PGB1010603" x="108.5" y="9.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.992" y="8.611" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="109.4652" y="8.484" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Z2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="TVS0603" package3d_urn="urn:adsk.eagle:package:11801346/2" value="PGB1010603" x="108.5" y="14.5" smashed="yes" rot="R270">
+<element name="Z2" library="SuperHouse-Diodes" library_urn="urn:adsk.eagle:library:28961057" package="TVS0603" package3d_urn="urn:adsk.eagle:package:28961086/1" value="PGB1010603" x="108.5" y="14.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="109.008" y="15.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="107.5348" y="15.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R18" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="5.1K" x="110.5" y="9.5" smashed="yes" rot="R90">
+<element name="R18" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="5.1K" x="110.5" y="9.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.992" y="8.611" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="111.4652" y="8.484" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
@@ -1930,15 +1988,15 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="34.159" y="44.889" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" x="31.8095" y="44.9525" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="R24" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K" x="106.5" y="3.5" smashed="yes" rot="R270">
+<element name="R24" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K" x="106.5" y="3.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="107.008" y="4.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="105.5348" y="4.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R25" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K" x="101.5" y="3.5" smashed="yes" rot="R90">
+<element name="R25" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K" x="101.5" y="3.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="100.992" y="2.611" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="102.4652" y="2.484" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="SOT-363" package3d_urn="urn:adsk.eagle:package:11799616/2" value="MMDT3904" x="104" y="3.5" smashed="yes" rot="R180">
+<element name="Q2" library="SuperHouse-Transistors" library_urn="urn:adsk.eagle:library:28961147" package="SOT-363" package3d_urn="urn:adsk.eagle:package:28961172/1" value="MMDT3904" x="104" y="3.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="104" y="2.103" size="0.6096" layer="25" font="vector" ratio="16" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="TRANS-13337" x="141.5" y="-7.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="104" y="4.897" size="0.6096" layer="27" font="vector" ratio="16" rot="R180" align="top-center"/>
@@ -1951,7 +2009,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="113.5" y="22" size="1.27" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="117.5" y="22" size="1.27" layer="27" rot="R90" align="top-center"/>
 </element>
-<element name="R19" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="5.1K" x="110.5" y="14.5" smashed="yes" rot="R270">
+<element name="R19" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="5.1K" x="110.5" y="14.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.008" y="15.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="109.5348" y="15.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -1959,12 +2017,12 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="115.12" y="12" size="0.762" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="115.945" y="12" size="0.762" layer="27" rot="R90" align="bottom-center"/>
 </element>
-<element name="R27" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="22K" x="104" y="8" smashed="yes" rot="R180">
+<element name="R27" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="22K" x="104" y="8" smashed="yes" rot="R180">
 <attribute name="NAME" x="104.889" y="7.492" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="105.016" y="8.9652" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="S1" library="SuperHouse-Switches" library_urn="urn:adsk.eagle:library:11744182" package="TACTILE_SMT_3X4X2" package3d_urn="urn:adsk.eagle:package:11818379/4" value="RESET" x="40" y="40.5" smashed="yes" rot="R90"/>
-<element name="R28" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="22K" x="99.5" y="3.5" smashed="yes" rot="R270">
+<element name="R28" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="22K" x="99.5" y="3.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="100.008" y="4.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="98.5348" y="4.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -1972,15 +2030,15 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="54.3" y="44.76" size="1.27" layer="25"/>
 <attribute name="VALUE" x="54.3" y="43.03" size="1.27" layer="27"/>
 </element>
-<element name="C20" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0805" package3d_urn="urn:adsk.eagle:package:7066318/4" value="10uF" x="44.5" y="45.5" smashed="yes" rot="R90">
+<element name="C20" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0805" package3d_urn="urn:adsk.eagle:package:7066318/4" value="10uF" x="44.5" y="45.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.6745" y="44.738" size="0.4064" layer="25" rot="R90"/>
 <attribute name="VALUE" x="45.897" y="44.484" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C15" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="1uF" x="104" y="6.5" smashed="yes">
+<element name="C15" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="1uF" x="104" y="6.5" smashed="yes">
 <attribute name="NAME" x="103.111" y="7.008" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="102.984" y="5.5348" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="C9" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="105" y="17" smashed="yes" rot="R90">
+<element name="C9" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="105" y="17" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.492" y="16.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="105.9652" y="15.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
@@ -1993,23 +2051,23 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="VALUE" x="98.9652" y="8.984" size="0.4064" layer="27" rot="R90"/>
 </element>
 <element name="IC5" library="SuperHouse-ICs" library_urn="urn:adsk.eagle:library:11768868" package="QFN-24" package3d_urn="urn:adsk.eagle:package:7066298/2" value="CP2102N-A01-GQFN24" x="103" y="12.5" smashed="yes" rot="R90"/>
-<element name="R29" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="22.1K" x="103.5" y="17" smashed="yes" rot="R90">
+<element name="R29" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="22.1K" x="103.5" y="17" smashed="yes" rot="R90">
 <attribute name="NAME" x="102.992" y="16.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="104.4652" y="15.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R30" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="47.5K" x="102" y="17" smashed="yes" rot="R270">
+<element name="R30" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="47.5K" x="102" y="17" smashed="yes" rot="R270">
 <attribute name="NAME" x="102.508" y="17.889" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="101.0348" y="18.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R10" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K" x="96" y="13" smashed="yes" rot="R270">
+<element name="R10" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="96" y="13" smashed="yes" rot="R270">
 <attribute name="NAME" x="96.508" y="13.889" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="95.0348" y="14.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R11" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K" x="98" y="13" smashed="yes" rot="R270">
+<element name="R11" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="98" y="13" smashed="yes" rot="R270">
 <attribute name="NAME" x="98.508" y="13.889" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="97.0348" y="14.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="VR1" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" package="TO220" package3d_urn="urn:adsk.eagle:package:24071313/3" value="L78S05CV" x="19" y="32" smashed="yes">
+<element name="VR1" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" package="TO220" package3d_urn="urn:adsk.eagle:package:24071313/4" value="L78S05CV" x="19" y="32" smashed="yes">
 <attribute name="NAME" x="19" y="36.4948" size="1.27" layer="25" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="19" y="34.92" size="1.27" layer="27" ratio="10" align="bottom-center"/>
 </element>
@@ -2040,7 +2098,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="108.1138" y="26.9088" size="1.27" layer="25" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="108.19" y="19.015" size="1.27" layer="27" align="bottom-center"/>
 </element>
-<element name="R14" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="4K7" x="103.5" y="26" smashed="yes" rot="R90">
+<element name="R14" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="4K7" x="103.5" y="26" smashed="yes" rot="R90">
 <attribute name="NAME" x="102.992" y="25.111" size="0.4064" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="104.4652" y="24.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
@@ -2068,13 +2126,13 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="99.111" y="34.008" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="98.984" y="32.5348" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="R12" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="104" y="49" smashed="yes" rot="R180">
-<attribute name="NAME" x="104.889" y="48.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="105.016" y="49.9652" size="0.4064" layer="27" font="vector" rot="R180"/>
+<element name="R12" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="106" y="46.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="106.889" y="45.992" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="107.016" y="47.4652" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R13" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="104" y="47" smashed="yes" rot="R180">
-<attribute name="NAME" x="104.889" y="46.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="105.016" y="47.9652" size="0.4064" layer="27" font="vector" rot="R180"/>
+<element name="R13" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="1K" x="100" y="44" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.492" y="43.111" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="100.9652" y="42.984" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R9" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" package="R0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="470R" x="74" y="39" smashed="yes" rot="R90">
 <attribute name="NAME" x="73.492" y="38.111" size="0.4064" layer="25" font="vector" rot="R90"/>
@@ -2111,6 +2169,10 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <element name="VR2" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" package="DP1435" package3d_urn="urn:adsk.eagle:package:30087355/2" value="DP1435-SIL" x="19" y="14" smashed="yes" rot="R180">
 <attribute name="NAME" x="19" y="9.92" size="1.27" layer="25" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="19" y="12.46" size="1.27" layer="27" ratio="12" rot="R180" align="bottom-center"/>
+</element>
+<element name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08" package3d_urn="urn:adsk.eagle:package:11866882/3" value="IO" x="96.5" y="52" smashed="yes">
+<attribute name="NAME" x="86.2638" y="53.8288" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="86.34" y="48.825" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -2268,6 +2330,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <via x="13" y="44.5" extent="1-16" drill="0.4"/>
 <via x="25" y="43" extent="1-16" drill="0.4"/>
 <via x="13" y="43" extent="1-16" drill="0.4"/>
+<contactref element="J11" pad="2"/>
 </signal>
 <signal name="TXOP">
 <contactref element="U1" pad="P$5"/>
@@ -2323,19 +2386,19 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="82.25" y1="39.75" x2="81" y2="38.5" width="0.254" layer="1"/>
 <wire x1="81" y1="38.5" x2="81" y2="37.5" width="0.254" layer="1"/>
 <wire x1="81" y1="37.5" x2="80.5" y2="37" width="0.254" layer="1"/>
-<wire x1="103.238" y1="47" x2="101.5" y2="47" width="0.254" layer="1"/>
-<via x="101.5" y="47" extent="1-16" drill="0.4"/>
-<wire x1="82" y1="47" x2="80" y2="45" width="0.254" layer="16"/>
+<via x="100" y="46.5" extent="1-16" drill="0.4"/>
+<wire x1="81.5" y1="46.5" x2="80" y2="45" width="0.254" layer="16"/>
 <wire x1="80" y1="45" x2="70.5" y2="45" width="0.254" layer="16"/>
 <via x="70.5" y="45" extent="1-16" drill="0.4"/>
 <wire x1="70.5" y1="38.5" x2="72" y2="37" width="0.254" layer="1"/>
 <via x="72" y="37" extent="1-16" drill="0.4"/>
 <wire x1="72" y1="37" x2="78" y2="37" width="0.254" layer="16"/>
-<wire x1="101.5" y1="47" x2="82" y2="47" width="0.254" layer="16"/>
+<wire x1="100" y1="46.5" x2="81.5" y2="46.5" width="0.254" layer="16"/>
 <wire x1="70.5" y1="45" x2="70.5" y2="38.5" width="0.254" layer="1"/>
 <via x="78" y="37" extent="1-16" drill="0.4"/>
 <wire x1="80.5" y1="37" x2="78" y2="37" width="0.254" layer="1"/>
 <wire x1="78" y1="38.238" x2="78" y2="37" width="0.254" layer="1"/>
+<wire x1="100" y1="44.762" x2="100" y2="46.5" width="0.254" layer="1"/>
 </signal>
 <signal name="FDXLED">
 <contactref element="IC4" pad="26"/>
@@ -2359,11 +2422,16 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="N$332">
 <contactref element="U1" pad="P$12"/>
 <contactref element="R13" pad="1"/>
-<wire x1="104.762" y1="47" x2="110" y2="41.762" width="0.254" layer="1"/>
+<wire x1="110" y1="41.762" x2="107.881" y2="43.881" width="0.254" layer="1"/>
+<wire x1="107.881" y1="43.881" x2="107.762" y2="44" width="0.254" layer="1"/>
 <wire x1="110" y1="41.762" x2="110" y2="37" width="0.254" layer="1"/>
 <wire x1="110" y1="37" x2="113" y2="34" width="0.254" layer="1"/>
 <wire x1="115.995" y1="34" x2="117.08" y2="32.915" width="0.254" layer="1"/>
 <wire x1="113" y1="34" x2="115.995" y2="34" width="0.254" layer="1"/>
+<wire x1="107.762" y1="44" x2="106.762" y2="45" width="0.254" layer="1"/>
+<wire x1="102.238" y1="43.238" x2="100" y2="43.238" width="0.254" layer="1"/>
+<wire x1="106.762" y1="45" x2="104" y2="45" width="0.254" layer="1"/>
+<wire x1="104" y1="45" x2="102.238" y2="43.238" width="0.254" layer="1"/>
 </signal>
 <signal name="N$327">
 <contactref element="LED5" pad="C"/>
@@ -2398,10 +2466,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="N$67">
 <contactref element="U1" pad="P$14"/>
 <contactref element="R12" pad="1"/>
-<wire x1="104.762" y1="49" x2="106.5" y2="49" width="0.254" layer="1"/>
-<wire x1="106.5" y1="49" x2="108.5" y2="47" width="0.254" layer="1"/>
+<wire x1="106.762" y1="46.5" x2="107.262" y2="47" width="0.254" layer="1"/>
+<wire x1="113.705" y1="47" x2="107.262" y2="47" width="0.254" layer="1"/>
 <wire x1="113.705" y1="47" x2="117.08" y2="43.625" width="0.254" layer="1"/>
-<wire x1="108.5" y1="47" x2="113.705" y2="47" width="0.254" layer="1"/>
 </signal>
 <signal name="POEV+">
 <contactref element="U1" pad="P$9"/>
@@ -2463,12 +2530,12 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="30.6999" y1="43.05" x2="29.45" y2="43.05" width="0.4064" layer="1"/>
 <wire x1="29.45" y1="43.05" x2="29" y2="43.5" width="0.4064" layer="1"/>
 <wire x1="29" y1="43.5" x2="29" y2="44.5" width="0.4064" layer="1"/>
-<wire x1="31.238" y1="39" x2="31.238" y2="34.488" width="0.4064" layer="1"/>
+<wire x1="31.238" y1="39" x2="31.238" y2="34.488" width="0.6096" layer="1"/>
 <wire x1="31.238" y1="34.488" x2="31" y2="34.25" width="0.4064" layer="1"/>
 <wire x1="31.238" y1="39" x2="31.1" y2="39.138" width="0.4064" layer="1"/>
-<wire x1="31.1" y1="39.138" x2="31.1" y2="41" width="0.4064" layer="1"/>
-<wire x1="31.1" y1="41" x2="30.6999" y2="41.4001" width="0.4064" layer="1"/>
-<wire x1="30.6999" y1="41.4001" x2="30.6999" y2="43.05" width="0.4064" layer="1"/>
+<wire x1="31.1" y1="39.138" x2="31.1" y2="41" width="0.6096" layer="1"/>
+<wire x1="31.1" y1="41" x2="30.6999" y2="41.4001" width="0.6096" layer="1"/>
+<wire x1="30.6999" y1="41.4001" x2="30.6999" y2="43.05" width="0.6096" layer="1"/>
 <via x="95" y="26" extent="1-16" drill="0.4"/>
 <wire x1="93.762" y1="26" x2="95" y2="26" width="0.4064" layer="1"/>
 <wire x1="95.6162" y1="23.905" x2="95.6162" y2="25.3838" width="0.4064" layer="1"/>
@@ -2478,17 +2545,15 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="103.5" y1="19" x2="103" y2="19.5" width="0.4064" layer="1"/>
 <wire x1="103" y1="19.5" x2="99" y2="19.5" width="0.4064" layer="1"/>
 <wire x1="99" y1="19.5" x2="99" y2="20.95" width="0.4064" layer="1"/>
-<wire x1="99" y1="20.95" x2="98.9" y2="21.05" width="0.4064" layer="1"/>
+<wire x1="99" y1="20.95" x2="99" y2="21.05" width="0.4064" layer="1"/>
 <wire x1="99" y1="19.5" x2="99" y2="22" width="0.4064" layer="16"/>
 <wire x1="99" y1="22" x2="95" y2="26" width="0.4064" layer="16"/>
-<wire x1="31" y1="34.25" x2="31.25" y2="34" width="0.254" layer="1"/>
-<wire x1="31.25" y1="34" x2="36" y2="34" width="0.254" layer="1"/>
-<via x="36" y="34" extent="1-16" drill="0.4"/>
-<wire x1="36" y1="34" x2="43" y2="27" width="0.254" layer="16"/>
 <via x="84" y="27" extent="1-16" drill="0.4"/>
-<wire x1="84" y1="27" x2="94" y2="27" width="0.254" layer="2"/>
-<wire x1="94" y1="27" x2="95" y2="26" width="0.254" layer="2"/>
-<wire x1="43" y1="27" x2="84" y2="27" width="0.254" layer="16"/>
+<wire x1="84" y1="27" x2="94" y2="27" width="0.4064" layer="2"/>
+<wire x1="94" y1="27" x2="95" y2="26" width="0.4064" layer="2"/>
+<wire x1="21.54" y1="29.46" x2="21.54" y2="32" width="0.4064" layer="16"/>
+<wire x1="84" y1="27" x2="24" y2="27" width="0.4064" layer="16"/>
+<wire x1="24" y1="27" x2="21.54" y2="29.46" width="0.4064" layer="16"/>
 </signal>
 <signal name="3V3A">
 <contactref element="L1" pad="2"/>
@@ -2523,15 +2588,17 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="91.25" y1="37.75" x2="92.95" y2="37.75" width="0.254" layer="1"/>
 <wire x1="92.95" y1="37.75" x2="93.988" y2="37.75" width="0.254" layer="1"/>
 <wire x1="93.988" y1="37.75" x2="95" y2="36.738" width="0.254" layer="1"/>
-<wire x1="88" y1="49.5" x2="90.6" y2="49.5" width="0.4064" layer="1"/>
 <wire x1="95" y1="35.262" x2="95" y2="36.738" width="0.254" layer="1"/>
 <wire x1="92.95" y1="35.75" x2="94.25" y2="35.75" width="0.254" layer="1"/>
 <wire x1="94.738" y1="35.262" x2="95" y2="35.262" width="0.254" layer="1"/>
 <wire x1="94.25" y1="35.75" x2="94.738" y2="35.262" width="0.254" layer="1"/>
-<wire x1="90.25" y1="44.512" x2="90.738" y2="45" width="0.254" layer="1"/>
-<wire x1="90.25" y1="41.45" x2="90.25" y2="44.512" width="0.254" layer="1"/>
-<wire x1="90.738" y1="45" x2="90.738" y2="49.362" width="0.254" layer="1"/>
-<wire x1="90.738" y1="49.362" x2="90.6" y2="49.5" width="0.254" layer="1"/>
+<wire x1="90.25" y1="41.45" x2="90.25" y2="43.5" width="0.254" layer="1"/>
+<wire x1="90.25" y1="43.5" x2="91.512" y2="44.762" width="0.254" layer="1"/>
+<wire x1="91.512" y1="44.762" x2="93.5" y2="44.762" width="0.254" layer="1"/>
+<wire x1="97" y1="45.4" x2="96.362" y2="44.762" width="0.4064" layer="1"/>
+<wire x1="96.362" y1="44.762" x2="93.5" y2="44.762" width="0.4064" layer="1"/>
+<wire x1="93.5" y1="44.762" x2="93.5" y2="46" width="0.4064" layer="1"/>
+<wire x1="93.5" y1="46" x2="93" y2="46.5" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$60">
 <contactref element="D1" pad="A"/>
@@ -2576,7 +2643,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <contactref element="Q1" pad="1"/>
 <wire x1="95.6162" y1="21.365" x2="95.6162" y2="22.635" width="0.4064" layer="1"/>
 <wire x1="95.6162" y1="22.635" x2="98.585" y2="22.635" width="0.4064" layer="1"/>
-<wire x1="98.585" y1="22.635" x2="98.9" y2="22.95" width="0.4064" layer="1"/>
+<wire x1="98.585" y1="22.635" x2="99" y2="22.95" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="IC3" pad="1"/>
@@ -2653,10 +2720,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="78" y1="43.262" x2="80" y2="43.262" width="0.254" layer="1"/>
 <contactref element="J5" pad="2"/>
 <contactref element="J7" pad="1"/>
-<wire x1="86" y1="49.5" x2="86" y2="51.262" width="0.3048" layer="1"/>
-<wire x1="86" y1="51.262" x2="86.238" y2="51.5" width="0.3048" layer="1"/>
-<wire x1="82" y1="44" x2="82" y2="48" width="0.254" layer="1"/>
-<wire x1="82" y1="44" x2="81.262" y2="43.262" width="0.254" layer="1"/>
+<wire x1="81.262" y1="43.262" x2="82" y2="44" width="0.254" layer="1"/>
 <wire x1="81.262" y1="43.262" x2="80" y2="43.262" width="0.254" layer="1"/>
 <via x="86" y="39" extent="1-16" drill="0.4"/>
 <via x="93" y="29" extent="1-16" drill="0.4"/>
@@ -2673,10 +2737,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="106" y1="15.238" x2="105" y2="16.238" width="0.254" layer="1"/>
 <wire x1="104.9" y1="13.75" x2="106" y2="14.85" width="0.254" layer="1"/>
 <wire x1="106" y1="14.85" x2="106" y2="15" width="0.254" layer="1"/>
-<wire x1="89.6" y1="27.1" x2="89.6" y2="28.825" width="0.254" layer="1"/>
-<wire x1="89.6" y1="27.1" x2="88" y2="25.5" width="0.254" layer="1"/>
 <via x="88" y="22.5" extent="1-16" drill="0.4"/>
-<wire x1="88" y1="25.5" x2="88" y2="22.5" width="0.254" layer="1"/>
 <wire x1="90.3838" y1="22.635" x2="88.135" y2="22.635" width="0.254" layer="1"/>
 <wire x1="88.135" y1="22.635" x2="88" y2="22.5" width="0.254" layer="1"/>
 <wire x1="73.975" y1="17.3" x2="76.7" y2="17.3" width="0.254" layer="1"/>
@@ -2712,15 +2773,18 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="37.262" y1="44.738" x2="40" y2="44.738" width="0.4064" layer="1"/>
 <wire x1="84.05" y1="38.25" x2="85.25" y2="38.25" width="0.254" layer="1"/>
 <wire x1="85.25" y1="38.25" x2="86" y2="39" width="0.254" layer="1"/>
-<via x="84" y="49.5" extent="1-16" drill="0.4"/>
-<wire x1="82" y1="48" x2="83.5" y2="49.5" width="0.254" layer="1"/>
-<wire x1="83.5" y1="49.5" x2="84" y2="49.5" width="0.254" layer="1"/>
-<wire x1="84" y1="49.5" x2="86" y2="49.5" width="0.4064" layer="1"/>
 <via x="44.5" y="36" extent="1-16" drill="0.4"/>
 <wire x1="44.5254" y1="37.468" x2="44.5" y2="37.4426" width="0.254" layer="1"/>
 <wire x1="44.5" y1="37.4426" x2="44.5" y2="36" width="0.254" layer="1"/>
 <wire x1="76.7" y1="17.3" x2="77.17" y2="17.77" width="0.254" layer="1"/>
 <wire x1="77.17" y1="17.77" x2="79.5" y2="17.77" width="0.254" layer="1"/>
+<contactref element="J11" pad="1"/>
+<wire x1="87.61" y1="52" x2="87.61" y2="49.89" width="0.4064" layer="1"/>
+<wire x1="87.61" y1="49.89" x2="91" y2="46.5" width="0.4064" layer="1"/>
+<wire x1="82" y1="51.262" x2="81.762" y2="51.5" width="0.254" layer="1"/>
+<wire x1="82" y1="44" x2="82" y2="51.262" width="0.254" layer="1"/>
+<wire x1="81.762" y1="51.5" x2="82.262" y2="52" width="0.254" layer="1"/>
+<wire x1="82.262" y1="52" x2="87.61" y2="52" width="0.254" layer="1"/>
 </signal>
 <signal name="ACTLED">
 <contactref element="IC4" pad="27"/>
@@ -2733,16 +2797,16 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="74" y1="36.738" x2="75.238" y2="35.5" width="0.254" layer="1"/>
 <wire x1="74" y1="36.738" x2="74" y2="38.238" width="0.254" layer="1"/>
 <wire x1="81" y1="35.5" x2="75.238" y2="35.5" width="0.254" layer="1"/>
-<wire x1="103.238" y1="49" x2="101.5" y2="49" width="0.254" layer="1"/>
-<via x="101.5" y="49" extent="1-16" drill="0.4"/>
+<wire x1="105.238" y1="46.5" x2="104" y2="46.5" width="0.254" layer="1"/>
+<via x="104" y="46.5" extent="1-16" drill="0.4"/>
 <wire x1="77" y1="46" x2="71.5" y2="46" width="0.254" layer="16"/>
 <via x="71.5" y="46" extent="1-16" drill="0.4"/>
 <wire x1="71.5" y1="46" x2="71.5" y2="39" width="0.254" layer="1"/>
 <wire x1="71.5" y1="39" x2="72.262" y2="38.238" width="0.254" layer="1"/>
 <wire x1="72.262" y1="38.238" x2="74" y2="38.238" width="0.254" layer="1"/>
-<wire x1="101.5" y1="49" x2="100.5" y2="48" width="0.254" layer="16"/>
-<wire x1="79" y1="48" x2="100.5" y2="48" width="0.254" layer="16"/>
-<wire x1="79" y1="48" x2="77" y2="46" width="0.254" layer="16"/>
+<wire x1="104" y1="46.5" x2="100.5" y2="50" width="0.254" layer="16"/>
+<wire x1="81" y1="50" x2="100.5" y2="50" width="0.254" layer="16"/>
+<wire x1="81" y1="50" x2="77" y2="46" width="0.254" layer="16"/>
 </signal>
 <signal name="1V2O">
 <contactref element="IC4" pad="22"/>
@@ -3054,17 +3118,14 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="IO25_TFT_CS">
 <contactref element="IC2" pad="10"/>
 <contactref element="J1" pad="8"/>
-<wire x1="49.2" y1="34.57" x2="47.07" y2="34.57" width="0.254" layer="1"/>
-<wire x1="47.07" y1="34.57" x2="46" y2="33.5" width="0.254" layer="1"/>
+<wire x1="49.2" y1="34.57" x2="45.07" y2="34.57" width="0.254" layer="1"/>
+<wire x1="45.07" y1="34.57" x2="44" y2="33.5" width="0.254" layer="1"/>
 <wire x1="56.5" y1="16.5" x2="56.5" y2="8.5" width="0.254" layer="1"/>
-<wire x1="46" y1="33.5" x2="46" y2="27" width="0.254" layer="1"/>
-<wire x1="46" y1="27" x2="56.5" y2="16.5" width="0.254" layer="1"/>
+<wire x1="44" y1="33.5" x2="44" y2="29" width="0.254" layer="1"/>
+<wire x1="44" y1="29" x2="56.5" y2="16.5" width="0.254" layer="1"/>
 <via x="56.5" y="8.5" extent="1-16" drill="0.4"/>
 <wire x1="56.5" y1="8.5" x2="56.5" y2="7.42" width="0.254" layer="16"/>
 <wire x1="56.5" y1="7.42" x2="59.19" y2="4.73" width="0.254" layer="16"/>
-</signal>
-<signal name="IO16">
-<contactref element="IC2" pad="27"/>
 </signal>
 <signal name="IO21_SDA">
 <contactref element="IC2" pad="33"/>
@@ -3083,13 +3144,21 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="73.975" y1="20.525" x2="75" y2="19.5" width="0.254" layer="1"/>
 <wire x1="75" y1="19.5" x2="76" y2="19.5" width="0.254" layer="1"/>
 <wire x1="85.5" y1="19.5" x2="76" y2="19.5" width="0.254" layer="1"/>
-<wire x1="64" y1="38" x2="75.5" y2="26.5" width="0.254" layer="15"/>
 <via x="64" y="38" extent="1-16" drill="0.4"/>
 <wire x1="64" y1="38" x2="64" y2="39" width="0.254" layer="1"/>
 <wire x1="64" y1="39" x2="64.65" y2="39.65" width="0.254" layer="1"/>
 <wire x1="64.65" y1="39.65" x2="66.8" y2="39.65" width="0.254" layer="1"/>
 <wire x1="76" y1="19.5" x2="75.5" y2="20" width="0.254" layer="15"/>
-<wire x1="75.5" y1="20" x2="75.5" y2="26.5" width="0.254" layer="15"/>
+<contactref element="J11" pad="3"/>
+<wire x1="64" y1="38" x2="69.5" y2="43.5" width="0.254" layer="15"/>
+<wire x1="86" y1="43.5" x2="92.69" y2="50.19" width="0.254" layer="15"/>
+<wire x1="92.69" y1="50.19" x2="92.69" y2="52" width="0.254" layer="15"/>
+<wire x1="69.5" y1="43.5" x2="86" y2="43.5" width="0.254" layer="15"/>
+<wire x1="75.5" y1="24.5" x2="74.5" y2="25.5" width="0.254" layer="15"/>
+<wire x1="75.5" y1="20" x2="75.5" y2="24.5" width="0.254" layer="15"/>
+<wire x1="74.5" y1="25.5" x2="70" y2="25.5" width="0.254" layer="15"/>
+<wire x1="70" y1="25.5" x2="64" y2="31.5" width="0.254" layer="15"/>
+<wire x1="64" y1="31.5" x2="64" y2="38" width="0.254" layer="15"/>
 </signal>
 <signal name="IO22_SCL">
 <contactref element="IC2" pad="36"/>
@@ -3115,6 +3184,12 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="69" y1="24" x2="60" y2="33" width="0.254" layer="15"/>
 <wire x1="60" y1="33" x2="60" y2="41" width="0.254" layer="15"/>
 <wire x1="60" y1="41" x2="61" y2="42" width="0.254" layer="15"/>
+<contactref element="J11" pad="4"/>
+<wire x1="61" y1="42" x2="63" y2="44" width="0.254" layer="2"/>
+<wire x1="63" y1="44" x2="91.23" y2="44" width="0.254" layer="2"/>
+<wire x1="91.23" y1="44" x2="95.23" y2="48" width="0.254" layer="2"/>
+<wire x1="95.23" y1="48" x2="95.23" y2="52" width="0.254" layer="1"/>
+<via x="95.23" y="48" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="IO2_TFT_DC">
 <contactref element="IC2" pad="24"/>
@@ -3176,9 +3251,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <via x="87" y="34.5" extent="1-16" drill="0.4"/>
 <wire x1="66.8" y1="44.73" x2="68.27" y2="44.73" width="0.254" layer="1"/>
 <wire x1="68.27" y1="44.73" x2="69" y2="44" width="0.254" layer="1"/>
-<wire x1="69" y1="38" x2="71" y2="36" width="0.254" layer="1"/>
-<wire x1="71" y1="36" x2="72" y2="36" width="0.254" layer="1"/>
-<wire x1="72" y1="36" x2="73" y2="35" width="0.254" layer="1"/>
+<wire x1="69" y1="38" x2="71.4" y2="35.6" width="0.254" layer="1"/>
+<wire x1="71.4" y1="35.6" x2="72.4" y2="35.6" width="0.254" layer="1"/>
+<wire x1="72.4" y1="35.6" x2="73" y2="35" width="0.254" layer="1"/>
 <wire x1="73" y1="35" x2="73" y2="34" width="0.254" layer="1"/>
 <wire x1="69" y1="44" x2="69" y2="38" width="0.254" layer="1"/>
 <via x="73" y="34" extent="1-16" drill="0.4"/>
@@ -3189,7 +3264,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="68" y1="3" x2="66" y2="3" width="0.254" layer="2"/>
 <wire x1="66" y1="3" x2="64.27" y2="4.73" width="0.254" layer="2"/>
 </signal>
-<signal name="IO27">
+<signal name="IO27_T7">
 <contactref element="IC2" pad="12"/>
 </signal>
 <signal name="N$21">
@@ -3257,9 +3332,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="85" y1="32.2334" x2="85.75" y2="32.2334" width="0.254" layer="1"/>
 <wire x1="85.75" y1="32.2334" x2="85.75" y2="32.55" width="0.254" layer="1"/>
 </signal>
-<signal name="IO17">
-<contactref element="IC2" pad="28"/>
-</signal>
 <signal name="IO19_CIPO">
 <contactref element="IC2" pad="31"/>
 <contactref element="J10" pad="7"/>
@@ -3315,7 +3387,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="83.5" y1="33" x2="75" y2="33" width="0.254" layer="16"/>
 <wire x1="54" y1="31" x2="52" y2="33" width="0.254" layer="16"/>
 <wire x1="52" y1="33" x2="52" y2="39" width="0.254" layer="16"/>
-<via x="52" y="39" extent="1-16" drill="0.5"/>
+<via x="52" y="39" extent="1-16" drill="0.4"/>
 <wire x1="52" y1="39" x2="51.35" y2="39.65" width="0.254" layer="1"/>
 <wire x1="51.35" y1="39.65" x2="49.2" y2="39.65" width="0.254" layer="1"/>
 <wire x1="75" y1="33" x2="73" y2="31" width="0.254" layer="16"/>
@@ -3324,11 +3396,40 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="IO35">
 <contactref element="IC2" pad="7"/>
 </signal>
-<signal name="IO32">
+<signal name="IO32_SCL2">
 <contactref element="IC2" pad="8"/>
+<wire x1="49.2" y1="37.11" x2="49.09" y2="37" width="0.254" layer="1"/>
+<wire x1="49.09" y1="37" x2="47" y2="37" width="0.254" layer="1"/>
+<via x="47" y="37" extent="1-16" drill="0.4"/>
+<wire x1="82.5" y1="47.5" x2="84.5" y2="49.5" width="0.254" layer="2"/>
+<wire x1="82.5" y1="47.5" x2="70.5" y2="47.5" width="0.254" layer="2"/>
+<wire x1="70.5" y1="47.5" x2="68.5" y2="45.5" width="0.254" layer="2"/>
+<wire x1="62.5" y1="45.5" x2="61" y2="44" width="0.254" layer="2"/>
+<wire x1="47" y1="40" x2="47" y2="37" width="0.254" layer="2"/>
+<wire x1="68.5" y1="45.5" x2="62.5" y2="45.5" width="0.254" layer="2"/>
+<wire x1="61" y1="44" x2="51" y2="44" width="0.254" layer="2"/>
+<wire x1="51" y1="44" x2="47" y2="40" width="0.254" layer="2"/>
+<contactref element="J11" pad="6"/>
+<wire x1="84.5" y1="49.5" x2="97.81" y2="49.5" width="0.254" layer="2"/>
+<wire x1="97.81" y1="49.5" x2="100.31" y2="52" width="0.254" layer="2"/>
 </signal>
-<signal name="IO33">
+<signal name="IO33_SDA2">
 <contactref element="IC2" pad="9"/>
+<contactref element="J11" pad="5"/>
+<wire x1="97.77" y1="52" x2="95.77" y2="50" width="0.254" layer="2"/>
+<wire x1="84" y1="50" x2="82" y2="48" width="0.254" layer="2"/>
+<wire x1="82" y1="48" x2="70" y2="48" width="0.254" layer="2"/>
+<wire x1="70" y1="48" x2="68" y2="46" width="0.254" layer="2"/>
+<wire x1="68" y1="46" x2="62" y2="46" width="0.254" layer="2"/>
+<wire x1="62" y1="46" x2="60.5" y2="44.5" width="0.254" layer="2"/>
+<wire x1="60.5" y1="44.5" x2="50.5" y2="44.5" width="0.254" layer="2"/>
+<wire x1="50.5" y1="44.5" x2="46" y2="40" width="0.254" layer="2"/>
+<wire x1="46" y1="40" x2="46" y2="38" width="0.254" layer="2"/>
+<via x="46" y="38" extent="1-16" drill="0.4"/>
+<wire x1="46" y1="38" x2="46" y2="36.5" width="0.254" layer="1"/>
+<wire x1="46" y1="36.5" x2="46.66" y2="35.84" width="0.254" layer="1"/>
+<wire x1="46.66" y1="35.84" x2="49.2" y2="35.84" width="0.254" layer="1"/>
+<wire x1="95.77" y1="50" x2="84" y2="50" width="0.254" layer="2"/>
 </signal>
 <signal name="IO26_WIZ_CS">
 <contactref element="IC2" pad="11"/>
@@ -3425,6 +3526,38 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="VB2">
 <contactref element="VR2" pad="4"/>
 </signal>
+<signal name="IO17_TX2">
+<contactref element="IC2" pad="28"/>
+<contactref element="J11" pad="7"/>
+<wire x1="66.8" y1="33.3" x2="67" y2="33.5" width="0.254" layer="1"/>
+<wire x1="67" y1="33.5" x2="69" y2="33.5" width="0.254" layer="1"/>
+<via x="69" y="33.5" extent="1-16" drill="0.4"/>
+<wire x1="69" y1="33.5" x2="69.5" y2="33" width="0.254" layer="15"/>
+<wire x1="83" y1="37" x2="83" y2="40" width="0.254" layer="15"/>
+<wire x1="83" y1="40" x2="85" y2="42" width="0.254" layer="15"/>
+<wire x1="98.5" y1="42" x2="102" y2="45.5" width="0.254" layer="15"/>
+<wire x1="102" y1="45.5" x2="102" y2="48.5" width="0.254" layer="15"/>
+<wire x1="102" y1="48.5" x2="102.85" y2="49.35" width="0.254" layer="15"/>
+<wire x1="102.85" y1="49.35" x2="102.85" y2="52" width="0.254" layer="15"/>
+<wire x1="69.5" y1="33" x2="79" y2="33" width="0.254" layer="15"/>
+<wire x1="79" y1="33" x2="83" y2="37" width="0.254" layer="15"/>
+<wire x1="85" y1="42" x2="98.5" y2="42" width="0.254" layer="15"/>
+</signal>
+<signal name="IO16_RX2">
+<contactref element="IC2" pad="27"/>
+<contactref element="J11" pad="8"/>
+<wire x1="66.8" y1="32.03" x2="68.97" y2="32.03" width="0.254" layer="1"/>
+<wire x1="68.97" y1="32.03" x2="69" y2="32" width="0.254" layer="1"/>
+<via x="69" y="32" extent="1-16" drill="0.4"/>
+<wire x1="69" y1="32" x2="69.5" y2="31.5" width="0.254" layer="15"/>
+<wire x1="79" y1="31.5" x2="69.5" y2="31.5" width="0.254" layer="15"/>
+<wire x1="84" y1="36.5" x2="84" y2="39" width="0.254" layer="15"/>
+<wire x1="84" y1="39" x2="85.5" y2="40.5" width="0.254" layer="15"/>
+<wire x1="79" y1="31.5" x2="84" y2="36.5" width="0.254" layer="15"/>
+<wire x1="85.5" y1="40.5" x2="100" y2="40.5" width="0.254" layer="15"/>
+<wire x1="100" y1="40.5" x2="105.39" y2="45.89" width="0.254" layer="15"/>
+<wire x1="105.39" y1="45.89" x2="105.39" y2="52" width="0.254" layer="15"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -3496,8 +3629,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="4,1,e42c4dc233245e7e"/>
 <approved hash="4,1,3a178b4e04723cc7"/>
 <approved hash="1,20,7a82b760b64f7bad"/>
-<approved hash="1,20,fc2accdacd02fdf2"/>
-<approved hash="1,20,9285716771879265"/>
 <approved hash="1,20,ac92297029efac0d"/>
 <approved hash="1,20,ac822960163d93df"/>
 <approved hash="1,20,7c837961464243a0"/>
@@ -3507,7 +3638,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,6299c37bc2946376"/>
 <approved hash="1,20,dc421fa01e81dd63"/>
 <approved hash="1,20,2c41efa3ee822d60"/>
-<approved hash="1,20,904d73af73919073"/>
 <approved hash="1,20,7e4abba8bb997e7b"/>
 <approved hash="1,20,7dc5b827b8457da7"/>
 <approved hash="1,20,7a42b7a0b68f7b6d"/>
@@ -3534,9 +3664,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,6e956b776a506fb2"/>
 <approved hash="1,20,a68227602683a761"/>
 <approved hash="1,20,928111632e41ada3"/>
-<approved hash="1,20,a3e560076121a2c3"/>
 <approved hash="1,20,73c3d021ce826d60"/>
-<approved hash="1,20,6242e3a0e3836261"/>
 <approved hash="1,20,95f9681b6a3597d7"/>
 <approved hash="1,20,60fae318e2fd611f"/>
 <approved hash="1,20,a1fa20182237a3d5"/>
@@ -3557,7 +3685,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,629b637962966374"/>
 <approved hash="1,20,7302d0e0d2c37121"/>
 <approved hash="1,20,6ea16f436f816e63"/>
-<approved hash="1,20,61c22020205d61bf"/>
 <approved hash="1,20,6289c36bc2746396"/>
 <approved hash="1,20,953368d15697ab75"/>
 <approved hash="1,20,603541d741b16053"/>
@@ -3567,7 +3694,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,7c837961764173a3"/>
 <approved hash="1,20,154318a11b9d167f"/>
 <approved hash="1,20,2482276026832561"/>
-<approved hash="1,20,a3e560076229a1cb"/>
 <approved hash="1,20,23ca202827c12423"/>
 <approved hash="1,20,23c22020224121a3"/>
 <approved hash="1,20,61c220203e847f66"/>
@@ -3581,7 +3707,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,ad4a28a829e9ac0b"/>
 <approved hash="1,20,7d4b78a979967c74"/>
 <approved hash="1,20,ac3229d029efac0d"/>
-<approved hash="23,1,d599016c1e63e9e3"/>
 <approved hash="3,1,8eb60eb2a0ca20ce"/>
 <approved hash="3,1,dc3c83c783c6dc3d"/>
 <approved hash="3,1,1730d8cbd8ca1731"/>
@@ -3606,6 +3731,17 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="3,1,021281ed13b5904a"/>
 <approved hash="3,1,89900994a5ac25a8"/>
 <approved hash="3,1,09f48a0b1ed39d2c"/>
+<approved hash="1,20,7649ababab957677"/>
+<approved hash="1,20,6142c0a0c7876665"/>
+<approved hash="1,20,d40a19e8198dd46f"/>
+<approved hash="1,20,a1e221002183a161"/>
+<approved hash="1,20,735b70b9719e727c"/>
+<approved hash="1,20,7481a963a9837461"/>
+<approved hash="1,20,614220a0278e666c"/>
+<approved hash="1,20,6dfd681f6f1c6afe"/>
+<approved hash="1,20,a24363a162bda35f"/>
+<approved hash="1,20,6a9d6f7f6e9e6b7c"/>
+<approved hash="23,1,d599016c1e63e9e3"/>
 </errors>
 </board>
 </drawing>
