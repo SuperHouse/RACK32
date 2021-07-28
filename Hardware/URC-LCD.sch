@@ -1006,10 +1006,10 @@ chip</description>
 <plain>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <text x="7.62" y="20.32" size="3.048" layer="94">TFT LCD Breakout</text>
-<text x="7.62" y="14.478" size="1.778" layer="94">SKU: URCTFT</text>
+<text x="7.62" y="14.478" size="1.778" layer="94">SKU: TFTBR</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2021 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
-<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/urctft</text>
+<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/tftbr</text>
 <frame x1="5.08" y1="12.7" x2="109.22" y2="25.4" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="35.56" y1="12.7" x2="66.04" y2="17.78" columns="8" rows="5" layer="94"/>
@@ -1030,6 +1030,11 @@ chip</description>
 <wire x1="157.48" y1="144.78" x2="210.82" y2="144.78" width="0.4064" layer="97" style="longdash"/>
 <wire x1="157.48" y1="71.12" x2="210.82" y2="71.12" width="0.4064" layer="97" style="longdash"/>
 <text x="162.56" y="139.7" size="2.54" layer="94">LCD Header</text>
+<text x="114.3" y="10.16" size="1.778" layer="97">Cheap 1.3" TFT LCD modules have the CS line
+permanently enabled, and not exposed on the
+connector. The buffer allows an external CS
+signal to isolate the COPI line when the display
+is not selected.</text>
 </plain>
 <instances>
 <instance part="FID1" gate="G$1" x="106.68" y="7.62" smashed="yes"/>
@@ -1198,6 +1203,10 @@ chip</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
