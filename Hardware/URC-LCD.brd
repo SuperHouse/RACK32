@@ -741,6 +741,8 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <contactref element="MOD1" pad="GND"/>
 <contactref element="IC1" pad="P$4"/>
 <contactref element="J1" pad="1"/>
+<contactref element="IC1" pad="P$5"/>
+<contactref element="IC1" pad="P$7"/>
 </signal>
 <signal name="3.3V">
 <contactref element="J1" pad="2"/>

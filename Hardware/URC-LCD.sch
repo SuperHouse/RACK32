@@ -314,6 +314,13 @@
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="NOCONNECTION" urn="urn:adsk.eagle:symbol:15098905/1" library_version="7">
+<description>A No Connection symbol only&lt;p&gt;
+
+Handy to use on those pins that you want to mark as NC on a schematic.</description>
+<wire x1="-0.508" y1="0.508" x2="0.508" y2="-0.508" width="0.254" layer="97"/>
+<wire x1="0.508" y1="0.508" x2="-0.508" y2="-0.508" width="0.254" layer="97"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:11790508/1" prefix="GND" library_version="6">
@@ -333,6 +340,19 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC" urn="urn:adsk.eagle:component:15098906/3" prefix="NC" library_version="7">
+<description>NC: No Connection</description>
+<gates>
+<gate name="G$1" symbol="NOCONNECTION" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1000,6 +1020,7 @@ chip</description>
 <part name="GND1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="IC1" library="SuperHouse-ICs" library_urn="urn:adsk.eagle:library:11768868" deviceset="74HC2G125" device="-TSSOP8" package3d_urn="urn:adsk.eagle:package:23576434/4" value="74HC2G125"/>
 <part name="R1" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="22K"/>
+<part name="NC1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1061,6 +1082,7 @@ is not selected.</text>
 <attribute name="NAME" x="115.3414" y="118.11" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.142" y="118.11" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="NC1" gate="G$1" x="147.32" y="106.68" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -1080,11 +1102,20 @@ is not selected.</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="116.84" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <junction x="149.86" y="81.28"/>
+<wire x1="121.92" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
 <junction x="53.34" y="116.84"/>
 <label x="43.18" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="2A"/>
+<wire x1="127" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="106.68" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
+<junction x="121.92" y="81.28"/>
+<pinref part="IC1" gate="G$1" pin="!2OE"/>
+<wire x1="121.92" y1="104.14" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
+<junction x="121.92" y="104.14"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
