@@ -3281,7 +3281,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="68" y1="3" x2="66" y2="3" width="0.254" layer="2"/>
 <wire x1="66" y1="3" x2="64.27" y2="4.73" width="0.254" layer="2"/>
 </signal>
-<signal name="IO27_T7">
+<signal name="IO27">
 <contactref element="IC2" pad="12"/>
 </signal>
 <signal name="N$21">
