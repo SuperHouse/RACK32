@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -1013,7 +1013,7 @@ chip</description>
 </classes>
 <parts>
 <part name="FID1" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" deviceset="FIDUCIAL" device="1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2"/>
-<part name="FID3" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" deviceset="FIDUCIAL" device="1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2"/>
+<part name="FID2" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" deviceset="FIDUCIAL" device="1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2"/>
 <part name="J1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X4" device="-SHROUD" package3d_urn="urn:adsk.eagle:package:30067988/3" value="SPI-LCD"/>
 <part name="P+20" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="MOD1" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-SPI" device="-PINS" package3d_urn="urn:adsk.eagle:package:17123365/2"/>
@@ -1058,8 +1058,8 @@ signal to isolate the COPI line when the display
 is not selected.</text>
 </plain>
 <instances>
-<instance part="FID1" gate="G$1" x="106.68" y="7.62" smashed="yes"/>
-<instance part="FID3" gate="G$1" x="101.6" y="7.62" smashed="yes"/>
+<instance part="FID1" gate="G$1" x="106.68" y="10.16" smashed="yes"/>
+<instance part="FID2" gate="G$1" x="101.6" y="10.16" smashed="yes"/>
 <instance part="J1" gate="G$1" x="66.04" y="116.84" smashed="yes">
 <attribute name="VALUE" x="66.04" y="104.14" size="1.778" layer="96" align="bottom-center"/>
 <attribute name="NAME" x="66.04" y="120.142" size="1.778" layer="95" align="bottom-center"/>
