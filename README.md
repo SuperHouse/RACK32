@@ -1,11 +1,11 @@
-Universal Rack Controller
-=========================
+Rack32 ESP32 rack-mount controller with Ethernet
+================================================
 
 Copyright 2021 SuperHouse Automation Pty Ltd  www.superhouse.tv
 
 A general purpose control board for rack mount projects.
 
-![Universal Rack Controller - ESP32 Edition](Images/URC-ESP32-v1_0-render.jpg)
+![Rack32 PCB](Images/RACK32-v1_0-oblique-1024.jpg)
 
 DIY rack-mount projects often require an Ethernet connection, a
 status display, power regulation, and other features that are not
@@ -16,15 +16,24 @@ features so they don't have to be recreated every time.
 
 Features:
 
- * RJ45 socket for Ethernet.
- * Support for both DIY (12/24V) PoE and 802.3af POE.
- * 1.3" LCD.
  * ESP32 microcontroller with WiFi.
- * Breakouts for ESP32 I/O and power.
+ * 10/100Mbps Ethernet.
+ * Support for both DIY (12V) PoE and 802.3af PoE.
+ * Pluggable terminal block for optional external DC power input.
+ * Automotive-grade voltage regulator for harsh electrical environments.
+ * 6-way IDC "I2C-Breakout" header for linking to other boards.
+ * 8-way IDC "SPI-LCD" header for connection to an LCD.
+ * USB-C connector for loading firmware.
+ * Auto power source selection between USB-C, PoE, and external DC.
+ * I/O header with power, 2 x I2C ports, and second hardware serial port.
+ * Micro SD card slot for config files, logs, and media storage.
+ * Onboard temperature sensor.
+ * Header for front-panel power LED.
+ * Can be built with onboard PCB antenna or external WiFi antenna.
 
 More information:
 
-  http://www.superhouse.tv/urc
+  http://www.superhouse.tv/rack32
 
 INSTALLATION
 ------------
