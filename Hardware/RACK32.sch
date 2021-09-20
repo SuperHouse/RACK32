@@ -5239,6 +5239,27 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <wire x1="10.55" y1="-1.9" x2="10.55" y2="1.9" width="0.127" layer="21"/>
 <wire x1="10.55" y1="1.9" x2="-10.55" y2="1.9" width="0.127" layer="21"/>
 </package>
+<package name="1206" urn="urn:adsk.eagle:footprint:30910323/1" library_version="19">
+<description>Polyfuse 1206 package</description>
+<smd name="1" x="-1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="-0.4" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="-0.4" x2="-1.6" y2="0.4" width="0.1016" layer="51" curve="126.343451"/>
+<wire x1="-1.6" y1="0.4" x2="-1.6" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="-0.75" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="-0.75" y1="0.8" x2="0.75" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="0.75" y1="0.8" x2="1.6" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="0.4" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-0.4" x2="1.6" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="0.75" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="0.75" y1="-0.8" x2="-0.75" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-0.75" y1="-0.8" x2="-1.6" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-0.75" y1="-0.8" x2="-0.75" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="0.75" y1="0.8" x2="0.75" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="126.343451"/>
+<text x="0" y="1" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.8128" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MF-SMDF050" urn="urn:adsk.eagle:package:11769373/4" type="model" library_version="9">
@@ -5252,6 +5273,12 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <description>Littelfuse AHEF750 PTC</description>
 <packageinstances>
 <packageinstance name="AHEF750"/>
+</packageinstances>
+</package3d>
+<package3d name="1206" urn="urn:adsk.eagle:package:30910324/2" type="model" library_version="19">
+<description>Polyfuse 1206 package</description>
+<packageinstances>
+<packageinstance name="1206"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5269,7 +5296,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PTC" urn="urn:adsk.eagle:component:11769265/6" prefix="F" library_version="17">
+<deviceset name="PTC" urn="urn:adsk.eagle:component:11769265/8" prefix="F" library_version="19">
 <description>Resettable polyfuses</description>
 <gates>
 <gate name="A" symbol="FUSE" x="0" y="0"/>
@@ -5296,6 +5323,18 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:24804467/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1206" package="1206">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30910324/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9825,7 +9864,7 @@ Allows current flow when high potential at base.</description>
 <part name="Q2" library="SuperHouse-Transistors" library_urn="urn:adsk.eagle:library:28961147" deviceset="TRANS_NPN_DUAL" device="-MMDT3904" package3d_urn="urn:adsk.eagle:package:28961172/1" value="MMDT3904"/>
 <part name="C18" library="SuperHouse-Capacitors" library_urn="urn:adsk.eagle:library:28961179" deviceset="CAP" device="0805" package3d_urn="urn:adsk.eagle:package:7066318/4" value="10uF"/>
 <part name="GND15" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
-<part name="F1" library="SuperHouse-Fuses" library_urn="urn:adsk.eagle:library:11769263" deviceset="PTC" device="-1812" package3d_urn="urn:adsk.eagle:package:11769373/4" technology="050" value="500mA 1812 PTC"/>
+<part name="F1" library="SuperHouse-Fuses" library_urn="urn:adsk.eagle:library:11769263" deviceset="PTC" device="-1206" package3d_urn="urn:adsk.eagle:package:30910324/2" value="500mA 1206 PTC"/>
 <part name="R19" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="5.1K"/>
 <part name="J3" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="USB-C-16P" device="-16P" package3d_urn="urn:adsk.eagle:package:17045956/2"/>
 <part name="GND16" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
@@ -9876,7 +9915,7 @@ Allows current flow when high potential at base.</description>
 <part name="P+21" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="GND21" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="J4" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02" device="-SCREW-3.81MM-HOR" package3d_urn="urn:adsk.eagle:package:30069155/3" value="DC IN"/>
-<part name="J6" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02" device="-KF2510" package3d_urn="urn:adsk.eagle:package:15401905/4" value="PWR_LED"/>
+<part name="J6" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02" device="-PIN" package3d_urn="urn:adsk.eagle:package:11816162/4" value="PWR_LED"/>
 <part name="R14" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="4K7"/>
 <part name="R20" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K"/>
 <part name="R21" library="SuperHouse-Resistors" library_urn="urn:adsk.eagle:library:28961094" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:28961141/1" value="10K"/>
@@ -9944,10 +9983,10 @@ Allows current flow when high potential at base.</description>
 <text x="114.3" y="6.35" size="1.4224" layer="97">WARNING: GPIO32/33 are used by RTC.
 Need to modify WROOM32 to use them
 as outputs</text>
-<text x="38.1" y="27.94" size="1.778" layer="97">I2C Addresses:
+<text x="76.2" y="55.88" size="1.778" layer="97">I2C Addresses:
 0x18: MCP9808</text>
 <wire x1="241.3" y1="134.62" x2="180.34" y2="134.62" width="0.4064" layer="97" style="longdash"/>
-<text x="7.62" y="27.94" size="1.778" layer="97">ESP32 Pin Assignment:
+<text x="12.7" y="55.88" size="1.778" layer="97">ESP32 Pin Assignment:
 IO1:  USB_TX
 IO2:  TFT_DC
 IO3:  USB_RX
@@ -9956,27 +9995,17 @@ IO5:  SD_CS
 IO13: WIZ_RST
 IO14: TFT_BLK
 IO16: RX2
-IO17: TX2
-IO18: SCLK
-IO19: CIPO
-IO21: SDA
-IO22: SCL
-IO23: COPI
-IO25: TFT_CS
-IO26: WIZ_CS
-IO32: SCL2
-IO33: SDA2
-IO34: WIZ_INT</text>
-<text x="7.62" y="20.32" size="3.048" layer="94">Universal Rack Controller ESP32</text>
-<text x="7.62" y="14.478" size="1.778" layer="94">SKU: URCESP32</text>
+IO17: TX2</text>
+<text x="7.62" y="20.32" size="3.048" layer="94">Rack32</text>
+<text x="7.62" y="14.478" size="1.778" layer="94">SKU: RACK32</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2021 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
-<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/urcesp32</text>
+<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/rack32</text>
 <frame x1="5.08" y1="12.7" x2="109.22" y2="25.4" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="35.56" y1="12.7" x2="66.04" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.0 (2021-07-23)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2021-09-20)</text>
 <text x="185.42" y="124.46" size="2.54" layer="94" ratio="12">Spare I/O</text>
 <wire x1="241.3" y1="129.54" x2="180.34" y2="129.54" width="0.4064" layer="97" style="longdash"/>
 <wire x1="241.3" y1="129.54" x2="241.3" y2="88.9" width="0.4064" layer="97" style="longdash"/>
@@ -9990,6 +10019,19 @@ IO34: WIZ_INT</text>
 <text x="223.52" y="99.06" size="1.778" layer="97" align="center-left">IO16_RX2</text>
 <wire x1="180.34" y1="129.54" x2="180.34" y2="88.9" width="0.4064" layer="97" style="longdash"/>
 <wire x1="241.3" y1="88.9" x2="180.34" y2="88.9" width="0.4064" layer="97" style="longdash"/>
+<text x="7.366" y="29.21" size="2.54" layer="94">OXRS Compatible.
+ID: OXRS-SHA-RACK32
+https://oxrs.io/docs/hardware/controllers/rack32.html</text>
+<text x="45.72" y="55.88" size="1.778" layer="97">IO18: SCLK
+IO19: CIPO
+IO21: SDA
+IO22: SCL
+IO23: COPI
+IO25: TFT_CS
+IO26: WIZ_CS
+IO32: SCL2
+IO33: SDA2
+IO34: WIZ_INT</text>
 </plain>
 <instances>
 <instance part="Z1" gate="G$1" x="55.88" y="113.03" smashed="yes" rot="R90">
@@ -11418,9 +11460,9 @@ IO34: WIZ_INT</text>
 <text x="78.74" y="73.66" size="2.54" layer="94">micro SD Card Slot</text>
 <text x="142.24" y="73.66" size="2.54" layer="94">Ethernet Status</text>
 <text x="12.7" y="172.72" size="2.54" layer="94">Ethernet Interface with PoE</text>
-<wire x1="7.62" y1="81.28" x2="7.62" y2="177.8" width="0.4064" layer="97" style="longdash"/>
+<wire x1="7.62" y1="91.44" x2="7.62" y2="177.8" width="0.4064" layer="97" style="longdash"/>
 <wire x1="7.62" y1="177.8" x2="127" y2="177.8" width="0.4064" layer="97" style="longdash"/>
-<wire x1="7.62" y1="81.28" x2="127" y2="81.28" width="0.4064" layer="97" style="longdash"/>
+<wire x1="7.62" y1="91.44" x2="127" y2="91.44" width="0.4064" layer="97" style="longdash"/>
 <wire x1="137.16" y1="25.4" x2="180.34" y2="25.4" width="0.4064" layer="97" style="longdash"/>
 <wire x1="180.34" y1="25.4" x2="180.34" y2="78.74" width="0.4064" layer="97" style="longdash"/>
 <wire x1="137.16" y1="25.4" x2="137.16" y2="78.74" width="0.4064" layer="97" style="longdash"/>
@@ -11429,7 +11471,7 @@ IO34: WIZ_INT</text>
 <wire x1="73.66" y1="78.74" x2="134.62" y2="78.74" width="0.4064" layer="97" style="longdash"/>
 <wire x1="73.66" y1="25.4" x2="134.62" y2="25.4" width="0.4064" layer="97" style="longdash"/>
 <wire x1="134.62" y1="25.4" x2="134.62" y2="78.74" width="0.4064" layer="97" style="longdash"/>
-<wire x1="127" y1="81.28" x2="127" y2="177.8" width="0.4064" layer="97" style="longdash"/>
+<wire x1="127" y1="91.44" x2="127" y2="177.8" width="0.4064" layer="97" style="longdash"/>
 <wire x1="129.54" y1="81.28" x2="129.54" y2="177.8" width="0.4064" layer="97" style="longdash"/>
 <wire x1="129.54" y1="177.8" x2="241.3" y2="177.8" width="0.4064" layer="97" style="longdash"/>
 <wire x1="241.3" y1="81.28" x2="241.3" y2="177.8" width="0.4064" layer="97" style="longdash"/>
@@ -11475,9 +11517,9 @@ detected when this signal is pulled LOW.</text>
 <attribute name="NAME" x="165.608" y="32.004" size="1.778" layer="95"/>
 <attribute name="VALUE" x="165.608" y="29.845" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="101.6" y="104.14" smashed="yes">
-<attribute name="NAME" x="103.124" y="107.061" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.076" y="103.759" size="1.778" layer="96" rot="R180"/>
+<instance part="C5" gate="G$1" x="101.6" y="106.68" smashed="yes">
+<attribute name="NAME" x="103.124" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.076" y="106.299" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U1" gate="G$1" x="43.18" y="139.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.56" y="157.48" size="1.778" layer="94" rot="R180"/>
@@ -11503,8 +11545,8 @@ detected when this signal is pulled LOW.</text>
 <instance part="P+5" gate="G$1" x="165.1" y="165.1" smashed="yes">
 <attribute name="VALUE" x="164.084" y="168.656" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="96.52" y="88.9" smashed="yes">
-<attribute name="VALUE" x="93.98" y="86.36" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="96.52" y="96.52" smashed="yes">
+<attribute name="VALUE" x="93.98" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="78.74" y="106.68" smashed="yes">
 <attribute name="VALUE" x="76.2" y="104.14" size="1.778" layer="96"/>
@@ -11565,9 +11607,9 @@ detected when this signal is pulled LOW.</text>
 <instance part="P+7" gate="G$1" x="116.84" y="157.48" smashed="yes">
 <attribute name="VALUE" x="115.824" y="161.036" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="91.44" y="104.14" smashed="yes">
-<attribute name="NAME" x="85.344" y="107.315" size="1.778" layer="95"/>
-<attribute name="VALUE" x="85.09" y="101.981" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="91.44" y="106.68" smashed="yes">
+<attribute name="NAME" x="85.344" y="109.855" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="104.521" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="99.06" y="142.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="97.79" y="143.7386" size="1.778" layer="95"/>
@@ -11714,13 +11756,13 @@ detected when this signal is pulled LOW.</text>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="101.6" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="104.14" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="101.6" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="91.44" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<junction x="96.52" y="93.98"/>
+<wire x1="96.52" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="104.14" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="99.06" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<junction x="96.52" y="101.6"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
@@ -12205,7 +12247,7 @@ detected when this signal is pulled LOW.</text>
 <wire x1="76.2" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="TXCT"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="109.22" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="111.76" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="134.62" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
 <junction x="91.44" y="134.62"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -12223,7 +12265,7 @@ detected when this signal is pulled LOW.</text>
 <wire x1="121.92" y1="114.3" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="114.3" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
 <junction x="111.76" y="114.3"/>
-<wire x1="101.6" y1="114.3" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="114.3" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <junction x="101.6" y="114.3"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -12295,14 +12337,15 @@ detected when this signal is pulled LOW.</text>
 <net name="IO34_WIZ_INT" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="!INT"/>
-<wire x1="213.36" y1="132.08" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="132.08" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="137.16" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="132.08" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="134.62" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="137.16" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="137.16" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
-<junction x="218.44" y="132.08"/>
-<label x="226.06" y="132.08" size="1.27" layer="95" xref="yes"/>
+<label x="218.44" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="218.44" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<junction x="215.9" y="134.62"/>
 </segment>
 </net>
 <net name="N$8" class="0">
