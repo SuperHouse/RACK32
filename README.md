@@ -3,7 +3,8 @@ Rack32 ESP32 rack-mount controller with Ethernet
 
 Copyright 2021 SuperHouse Automation Pty Ltd  www.superhouse.tv
 
-A general purpose control board for rack mount projects.
+A general purpose control board for rack mount projects, compatible
+with the [Open eXtensible Rack System](https://oxrs.io/).
 
 ![Rack32 PCB](Images/RACK32-v1_0-oblique-1024.jpg)
 
@@ -18,7 +19,7 @@ Features:
 
  * ESP32 microcontroller with WiFi.
  * 10/100Mbps Ethernet.
- * Support for both DIY (12V) PoE and 802.3af PoE.
+ * Support for both DIY (12V) PoE and 48V 802.3af PoE.
  * Pluggable terminal block for optional external DC power input.
  * Automotive-grade voltage regulator for harsh electrical environments.
  * 6-way IDC "I2C-Breakout" header for linking to other boards.
@@ -33,7 +34,7 @@ Features:
 
 More information:
 
-  http://www.superhouse.tv/rack32
+  [www.superhouse.tv/rack32](http://www.superhouse.tv/rack32)
 
 INSTALLATION
 ------------
