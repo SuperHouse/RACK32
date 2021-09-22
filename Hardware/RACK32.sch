@@ -11743,7 +11743,8 @@ detected when this signal is pulled LOW.</text>
 <wire x1="93.98" y1="38.1" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="53.34" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="53.34" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="43.18" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="33.02" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <junction x="99.06" y="38.1"/>
 <junction x="99.06" y="40.64"/>
@@ -11757,6 +11758,9 @@ detected when this signal is pulled LOW.</text>
 <wire x1="106.68" y1="35.56" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="J10" gate="G$1" pin="CD1"/>
+<wire x1="93.98" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
+<junction x="99.06" y="43.18"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>

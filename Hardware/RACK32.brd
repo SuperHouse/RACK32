@@ -418,8 +418,9 @@ tapr.org/OHL</text>
 <dimension x1="86" y1="-1" x2="63" y2="-1" x3="74.5" y3="-3" textsize="1.778" layer="47"/>
 <dimension x1="63" y1="-1" x2="45" y2="-1" x3="54" y3="-3" textsize="1.778" layer="47"/>
 <dimension x1="45" y1="-1" x2="0" y2="-1" x3="22.5" y3="-3" textsize="1.778" layer="47"/>
-<text x="29" y="64" size="1.778" layer="47">Rack32 v1.1 Mechanical Outline</text>
 <text x="42.8" y="22.8" size="1.4224" layer="21" font="vector" ratio="17" distance="25" rot="SR90">By Jon Oxer</text>
+<text x="74.1" y="30.254" size="2.3" layer="21" font="vector" ratio="17" distance="30" rot="SR90" align="bottom-center">OXRS.io</text>
+<text x="75.792" y="30.254" size="1.4224" layer="21" font="vector" ratio="17" distance="30" rot="SR90" align="bottom-center">compatible</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2351,6 +2352,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <via x="25" y="43" extent="1-16" drill="0.4"/>
 <via x="13" y="43" extent="1-16" drill="0.4"/>
 <contactref element="J11" pad="2"/>
+<contactref element="J10" pad="CD1"/>
 </signal>
 <signal name="TXOP">
 <contactref element="U1" pad="P$5"/>
