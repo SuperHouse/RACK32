@@ -10,7 +10,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="59" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -335,9 +335,10 @@ tapr.org/OHL</text>
 <wire x1="2" y1="36" x2="2" y2="34" width="0.4064" layer="21"/>
 <wire x1="2" y1="46" x2="2" y2="48" width="0.4064" layer="21"/>
 <wire x1="1" y1="35" x2="3" y2="35" width="0.4064" layer="21"/>
-<text x="29.3" y="35.5" size="1.016" layer="21" font="vector" ratio="12" distance="20" rot="R90">A squirrel is
+<text x="29.8" y="35.5" size="1.016" layer="21" font="vector" ratio="12" distance="20" rot="R90">Steve the
+ squirrel is
   eating the
-  vreg!</text>
+    vreg!</text>
 <text x="108.15" y="19" size="1.6764" layer="21" font="vector" ratio="17" align="bottom-center">LED</text>
 <wire x1="106" y1="21.6" x2="107.5" y2="21.6" width="0.254" layer="21"/>
 <wire x1="106.75" y1="22.35" x2="106.75" y2="20.85" width="0.254" layer="21"/>
@@ -1205,36 +1206,38 @@ tapr.org/OHL</text>
 <rectangle x1="-4" y1="14.5" x2="-2.5" y2="18.5" layer="31"/>
 <smd name="HEATSINK" x="0" y="14" dx="9.6" dy="10" layer="1" cream="no"/>
 </package>
-<package name="DP1435" urn="urn:adsk.eagle:footprint:30087353/1" library_version="26">
+<package name="DP1435" urn="urn:adsk.eagle:footprint:30087353/2" library_version="29">
 <description>SDAPO DP1435 PoE module in SIL format</description>
-<wire x1="-17.78" y1="7.1" x2="17.78" y2="7.1" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="7.1" x2="-17.78" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-5.01" y1="-9.1" x2="9.49" y2="-9.1" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="-1.1" x2="17.78" y2="7.1" width="0.2032" layer="21"/>
-<wire x1="9.49" y1="-1.1" x2="9.49" y2="-9.1" width="0.2032" layer="21"/>
-<wire x1="-5.01" y1="-1.1" x2="-5.01" y2="-9.1" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="-1.1" x2="-5.01" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="9.49" y1="-1.1" x2="10.99" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="10.99" y1="-1.1" x2="15.99" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="15.99" y1="-1.1" x2="17.78" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="7.1" x2="17.78" y2="7.1" width="0.2032" layer="51"/>
-<wire x1="-17.78" y1="7.1" x2="-17.78" y2="-1.1" width="0.2032" layer="51"/>
-<wire x1="17.78" y1="-1.1" x2="17.78" y2="7.1" width="0.2032" layer="51"/>
-<wire x1="-5.01" y1="-9.1" x2="9.49" y2="-9.1" width="0.2032" layer="51"/>
-<wire x1="9.49" y1="-1.1" x2="9.49" y2="-9.1" width="0.2032" layer="51"/>
-<wire x1="-5.01" y1="-1.1" x2="-5.01" y2="-9.1" width="0.2032" layer="51"/>
-<wire x1="-11.01" y1="-1.1" x2="-11.01" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="-16.01" y1="-1.1" x2="-16.01" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="-16.01" y1="-5.1" x2="-11.01" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="15.99" y1="-1.1" x2="15.99" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="10.99" y1="-5.1" x2="15.99" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="10.99" y1="-1.1" x2="10.99" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="-16.01" y1="-5.1" x2="-11.01" y2="-5.1" width="0.2032" layer="51"/>
-<wire x1="-11.01" y1="-1.1" x2="-11.01" y2="-5.1" width="0.2032" layer="51"/>
-<wire x1="-16.01" y1="-1.1" x2="-16.01" y2="-5.1" width="0.2032" layer="51"/>
-<wire x1="15.99" y1="-1.1" x2="15.99" y2="-5.1" width="0.2032" layer="51"/>
-<wire x1="10.99" y1="-5.1" x2="15.99" y2="-5.1" width="0.2032" layer="51"/>
-<wire x1="10.99" y1="-1.1" x2="10.99" y2="-5.1" width="0.2032" layer="51"/>
+<wire x1="-17.78" y1="8.5" x2="17.78" y2="8.5" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="8.5" x2="-17.78" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-5.01" y1="-7.6" x2="8" y2="-7.6" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="-1.1" x2="17.78" y2="8.5" width="0.2032" layer="21"/>
+<wire x1="8" y1="-1.1" x2="8" y2="-7.6" width="0.2032" layer="21"/>
+<wire x1="-5.01" y1="-1.1" x2="-5.01" y2="-7.6" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-1.1" x2="-16.5" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-16.5" y1="-1.1" x2="-10" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-10" y1="-1.1" x2="-5.01" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="8" y1="-1.1" x2="11.5" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="11.5" y1="-1.1" x2="17.5" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="17.5" y1="-1.1" x2="17.78" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="8.5" x2="17.78" y2="8.5" width="0.2032" layer="51"/>
+<wire x1="-17.78" y1="8.5" x2="-17.78" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="17.78" y1="-1.1" x2="17.78" y2="8.5" width="0.2032" layer="51"/>
+<wire x1="-5.01" y1="-7.6" x2="8" y2="-7.6" width="0.2032" layer="51"/>
+<wire x1="8" y1="-1.1" x2="8" y2="-7.6" width="0.2032" layer="51"/>
+<wire x1="-5.01" y1="-1.1" x2="-5.01" y2="-7.6" width="0.2032" layer="51"/>
+<wire x1="-10" y1="-1.1" x2="-10" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="-16.5" y1="-1.1" x2="-16.5" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="-16.5" y1="-3.1" x2="-10" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="17.5" y1="-1.1" x2="17.5" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="11.5" y1="-3.1" x2="17.5" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="11.5" y1="-1.1" x2="11.5" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="-16.5" y1="-3.1" x2="-10" y2="-3.1" width="0.2032" layer="51"/>
+<wire x1="-10" y1="-1.1" x2="-10" y2="-3.1" width="0.2032" layer="51"/>
+<wire x1="-16.5" y1="-1.1" x2="-16.5" y2="-3.1" width="0.2032" layer="51"/>
+<wire x1="17.5" y1="-1.1" x2="17.5" y2="-3.1" width="0.2032" layer="51"/>
+<wire x1="11.5" y1="-3.1" x2="17.5" y2="-3.1" width="0.2032" layer="51"/>
+<wire x1="11.5" y1="-1.1" x2="11.5" y2="-3.1" width="0.2032" layer="51"/>
 <text x="0" y="4.08" size="1.27" layer="25" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="1.54" size="1.27" layer="27" ratio="12" align="bottom-center">&gt;VALUE</text>
 <pad name="1" x="-16.51" y="0" drill="1.1" shape="square"/>
@@ -1259,7 +1262,7 @@ tapr.org/OHL</text>
 <packageinstance name="TO220"/>
 </packageinstances>
 </package3d>
-<package3d name="DP1435" urn="urn:adsk.eagle:package:30087355/2" type="model" library_version="27">
+<package3d name="DP1435" urn="urn:adsk.eagle:package:30087355/3" type="model" library_version="29">
 <description>SDAPO DP1435 PoE module in SIL format</description>
 <packageinstances>
 <packageinstance name="DP1435"/>
@@ -2183,9 +2186,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="25" y="1.1712" size="1.27" layer="25" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="25" y="6.175" size="1.27" layer="27" rot="R180" align="bottom-center"/>
 </element>
-<element name="VR2" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" package="DP1435" package3d_urn="urn:adsk.eagle:package:30087355/2" value="DP1435-SIL" x="19" y="14" smashed="yes" rot="R180">
-<attribute name="NAME" x="19" y="9.92" size="1.27" layer="25" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="19" y="12.46" size="0.8128" layer="27" ratio="12" rot="R180" align="bottom-center"/>
+<element name="VR2" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" package="DP1435" package3d_urn="urn:adsk.eagle:package:30087355/3" value="DP1435-SIL" x="19" y="15.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="19" y="11.42" size="1.27" layer="25" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="19" y="13.96" size="0.8128" layer="27" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08" package3d_urn="urn:adsk.eagle:package:11866882/3" value="IO" x="96.5" y="52" smashed="yes">
 <attribute name="NAME" x="86.2638" y="53.8288" size="1.27" layer="25" ratio="10"/>
@@ -2500,14 +2503,14 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="69" y1="41.5" x2="67" y2="43.5" width="0.8128" layer="16"/>
 <wire x1="104.055" y1="41.5" x2="69" y2="41.5" width="0.8128" layer="16"/>
 <wire x1="67" y1="43.5" x2="40.5" y2="43.5" width="0.8128" layer="16"/>
-<wire x1="35.51" y1="14" x2="35.51" y2="12.51" width="0.8128" layer="16"/>
+<wire x1="35.51" y1="15.5" x2="35.51" y2="12.51" width="0.8128" layer="16"/>
 <wire x1="17.27" y1="8.27" x2="17.27" y2="3" width="0.8128" layer="16"/>
 <wire x1="15" y1="35.5" x2="13.5" y2="34" width="0.8128" layer="16"/>
 <wire x1="40.5" y1="43.5" x2="32.5" y2="35.5" width="0.8128" layer="16"/>
 <wire x1="32.5" y1="35.5" x2="15" y2="35.5" width="0.8128" layer="16"/>
 <wire x1="13.5" y1="27" x2="18.5" y2="22" width="0.8128" layer="16"/>
 <wire x1="32.5" y1="22" x2="35.51" y2="18.99" width="0.8128" layer="16"/>
-<wire x1="35.51" y1="18.99" x2="35.51" y2="14" width="0.8128" layer="16"/>
+<wire x1="35.51" y1="18.99" x2="35.51" y2="15.5" width="0.8128" layer="16"/>
 <wire x1="13.5" y1="34" x2="13.5" y2="27" width="0.8128" layer="16"/>
 <wire x1="18.5" y1="22" x2="32.5" y2="22" width="0.8128" layer="16"/>
 <wire x1="35.51" y1="12.51" x2="33.5" y2="10.5" width="0.8128" layer="16"/>
@@ -2522,12 +2525,12 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="69.5" y1="43.5" x2="67.5" y2="45.5" width="0.8128" layer="16"/>
 <wire x1="67.5" y1="45.5" x2="39" y2="45.5" width="0.8128" layer="16"/>
 <wire x1="105.865" y1="43.5" x2="69.5" y2="43.5" width="0.8128" layer="16"/>
-<wire x1="32.97" y1="14" x2="32.97" y2="9.7" width="0.8128" layer="1"/>
+<wire x1="32.97" y1="15.5" x2="32.97" y2="9.7" width="0.8128" layer="1"/>
 <wire x1="26.27" y1="3" x2="32.97" y2="9.7" width="0.8128" layer="1"/>
 <wire x1="39" y1="45.5" x2="31" y2="37.5" width="0.8128" layer="16"/>
 <wire x1="31" y1="37.5" x2="14" y2="37.5" width="0.8128" layer="16"/>
 <wire x1="32.97" y1="16.53" x2="32" y2="17.5" width="0.8128" layer="16"/>
-<wire x1="32.97" y1="16.53" x2="32.97" y2="14" width="0.8128" layer="16"/>
+<wire x1="32.97" y1="16.53" x2="32.97" y2="15.5" width="0.8128" layer="16"/>
 <wire x1="14" y1="37.5" x2="11.5" y2="35" width="0.8128" layer="16"/>
 <wire x1="11.5" y1="26" x2="11.5" y2="35" width="0.8128" layer="16"/>
 <wire x1="20" y1="17.5" x2="11.5" y2="26" width="0.8128" layer="16"/>
@@ -3580,7 +3583,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <signal name="N$13">
 <contactref element="VR2" pad="6"/>
 <contactref element="D3" pad="A"/>
-<wire x1="2.49" y1="14" x2="2.49" y2="17.49" width="0.8128" layer="1"/>
+<wire x1="2.49" y1="15.5" x2="2.49" y2="17.49" width="0.8128" layer="1"/>
 <wire x1="2.49" y1="17.49" x2="4" y2="19" width="0.8128" layer="1"/>
 <wire x1="4" y1="19" x2="11" y2="19" width="0.8128" layer="1"/>
 <wire x1="11" y1="19" x2="14" y2="22" width="0.8128" layer="1"/>
@@ -3769,7 +3772,6 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,6dfd681f6f1c6afe"/>
 <approved hash="1,20,a24363a162bda35f"/>
 <approved hash="1,20,6a9d6f7f6e9e6b7c"/>
-<approved hash="23,1,d599016c1e63e9e3"/>
 </errors>
 </board>
 </drawing>
